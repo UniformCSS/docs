@@ -1,13 +1,13 @@
 ---
-title: Utility Settings
-description: Control individual properties settings.
+title: Utilities Settings
+description: Control individual CSS property settings.
 date: 2021-01-03
 ---
 
 
-## Utility Settings
+## Utilities Settings
 
-The `utility` setting allows you to configure how each properties are generated. For example, you can replace and extend variants for any given property.
+The `utilities` setting allows you to configure how each properties are generated. For example, you can replace and extend variants for any given property.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -15,7 +15,7 @@ The `utility` setting allows you to configure how each properties are generated.
 
 ## How it works
 
-Properties in Uniform CSS are constructed using a template data structure. By passing in your settings to the `utility` map, you can override the default data set for esch property. Each property has a set number of settings available and if a certain setting is not specified in your configuration, Uniform will fall back to the default setting value instead.
+Properties in Uniform CSS are constructed using a template data structure. By passing in your settings to the `utilities` map, you can override the default data set for esch property. Each property has a set number of settings available and if a certain setting is not specified in your configuration, Uniform will fall back to the default setting value instead.
 
 ```scss
 // main.scss
@@ -57,7 +57,7 @@ The following utility setting definitions apply.
 | `responsive` | `boolean` | Set responsiveness. |
 | `responsive-pseudos` | `boolean` | Responsiveness across pseudo variants. |
 | `properties` | `list` | Raw CSS property. |
-| `custom-properties` | `map` | Custom properties inclusion. |
+| `static-properties` | `map` | Custom properties inclusion. |
 | `extra-selector` | `string` | Extra selector attached to end
 | `variants` | `map` | Key value map of the variants. |
 | `pseudos` | `list` | Supported pseudos. |
@@ -271,9 +271,9 @@ The `properties` setting specifies the CSS property to include. You can include 
 
 ---
 
-## Custom Properties
+## Static Properties
 
-The `custom-properties` setting specifies custom properties to include with each property. This can be useful for properties that need to include resetting custom properties such as `background-color`. The `custom-properties` setting must be passed in as a map with key value pairs.
+The `static-properties` setting specifies static properties to include with each property. This can be useful for properties that need to include resetting custom properties such as `background-color`. The `static-properties` setting must be passed in as a map with key value pairs.
 
 ```scss
 // main.scss
@@ -281,7 +281,7 @@ The `custom-properties` setting specifies custom properties to include with each
   $config: (
     utilities: (
       background-color: (
-        custom-properties: (
+        static-properties: (
           --bg-ltn: 50%,
           --bg-opacity: 1,
         )

@@ -53582,7 +53582,7 @@ pre[class*=language-] {
 }
 
 .token.variable {
-  color: white;
+  color: rgb(var(--teal-500));
 }
 
 .token.keyword {

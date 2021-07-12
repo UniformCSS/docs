@@ -21,7 +21,8 @@ You can build custom components and still get access to theme variables using AP
 .custom-element {
   display: block;
   padding: size(20);
-  font-family: font-family(sans);
+  font-family: font(sans);
+  font-weight: font(semibold);
   border-radius: radius(md);
   box-shadow: shadow(sm);
 
@@ -33,27 +34,36 @@ You can build custom components and still get access to theme variables using AP
 
 ---
 
-## Using @apply mixin <span class="ml-6 inline-flex align-items-center px-8 h-20 font-sm bold radius-full bg-blue bg-brighten-500 color-white align-middle">Beta</span>
+## Using @apply Mixin
 
-The `apply()` mixin allows you to apply properties directly using shorthand utility class names. Behind the scene, it parses through the list of arguments and extends placeholder selectors that match the name.
+The `apply()` mixin allows you to apply properties directly using shorthand utility class names. The `apply()` mixin can also be nested inside a parent.
 
 ```scss
-.element {
-  @include apply(
-    'mb-24',
-    'hover.mb-32',
-    'p-20',
-    'bg-white',
-  )
+.parent {
+  @include apply('p-40 shadow-2xs radius-2xl');
+  &__child {
+    @include apply('hover.opacity-50 p-24 md.p-64');
+  }
 }
 ```
 
-To enable this feature, placeholders must be set to `true` in your configuration.
+```css
+/* main.css */
 
-```scss
-@use "uniform" as * with (
-  $config: (
-    placeholders: true,
-  )
-);
+.parent {
+  padding: 2.5rem;
+  box-shadow: var(--shadow-2xs);
+  border-radius: var(--radius-2xl);
+}
+.parent__child {
+  padding: 1.5rem;
+}
+.parent__child:hover {
+  opacity: 0.5;
+}
+@media (min-width: 1024px) {
+  .parent__child {
+    padding: 4rem;
+  }
+}
 ```

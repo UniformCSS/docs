@@ -6,7 +6,7 @@ date: 2021-01-07
 
 ## Custom Properties
 
-The `utility` map can also be used to generate your own custom properties.
+The `utilities` map can also be used to generate your own custom properties.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -52,7 +52,7 @@ You can use the same data structure of a utility setting to generate your own pr
 
 ## Excluding Custom Properties
 
-Any new utilities generated through the `utility` settings map will behave like any other utility and can be included or excluded using the `includes` and `excludes` setting.
+Any new utilities generated through the `utilities` settings map will behave like any other utility and can be included or excluded using the `includes` and `excludes` setting.
 
 ```scss
 // default values
@@ -82,14 +82,14 @@ Any new utilities generated through the `utility` settings map will behave like 
 
 ## Add to Core Library <span class="ml-6 inline-flex align-items-center px-8 h-20 font-sm bold radius-full bg-blue bg-brighten-500 color-white align-middle">Advanced</span>
 
-Adding utilities through the `utility` map in your configuration is a quick way to add new properties however when adding many, your Uniform configuration may become long. To avoid this problem custom properties can also be added natively to the core library.
+Adding utilities through the `utilities` map in your configuration is a quick way to add new properties however when adding many, your Uniform configuration may become long. To avoid this problem custom properties can also be added natively to the core library.
 
 ### 1. Build out your data structure
 
 Create a new `sass` document and use the following template to configure your own custom property.
 
 ```scss
-// leading-trim.scss
+// uniform/utilities/leading-trim.scss
 @use "uniform/core";
 @use "sass:map";
 
@@ -100,7 +100,7 @@ $responsive-pseudos: false;
 $extra-selector: null;
 
 $properties: (leading-trim);
-$custom-properties: ();
+$static-properties: ();
 
 $variants: ();
 
@@ -114,7 +114,7 @@ $config: (
       responsive-pseudos: $responsive-pseudos,
       extra-selector: $extra-selector,
       properties: $properties,
-      custom-properties: $custom-properties,
+      static-properties: $static-properties,
       variants: (
         $variants,
       ),
@@ -144,7 +144,7 @@ Open `uniform/_index.scss` and include the newly created custom property using t
 
 ### 3. Override or customize custom property (optional)
 
-Once your custom property has been added into the core library, it will behave like any other utility property. This means it can be configured, overwritten or extended like any other property inside the `utility` setting in your configuration.
+Once your custom property has been added into the core library, it will behave like any other utility property. This means it can be configured, overwritten or extended like any other property inside the `utilities` setting in your configuration.
 
 ```scss
 // main.scss

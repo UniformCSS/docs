@@ -62,7 +62,6 @@ The following theme setting definitions apply.
 | - | - |
 | `colors` | Set of base colors |
 | `gradients` | Set of gradients |
-| `lightness-levels` | Set of lightness levels |
 | `opacity-levels` | Set of opacity-levels |
 | `screens` | Set of breakpoints |
 | `positive-sizes` | Set of positive sizes |
@@ -83,7 +82,7 @@ The following theme setting definitions apply.
 
 ## Overriding Theme Settings
 
-To override base theme settings, pass key value pairs to each setting in your configuration. Passing in a key that already exists will override the existing value.
+To override base theme settings, pass key value pairs to each setting in your configuration. Passing in key value pairs to each theme setting will completly remove all other default key value pairs in that setting.
 
 ```scss
 // main.scss
@@ -112,27 +111,40 @@ To override base theme settings, pass key value pairs to each setting in your co
 
 ---
 
-## Disabling Theme Settings
+## Extending Theme Settings
 
-Passing in `null` will disable all default Uniform settings. If you wish to disable defaults and apply your own, you can do so by applying your own theme settings to the `extend` map.
+If you wish to keep the default settings but wish to override or extend, you can pass theme settings under the `extend` setting instead. Passing in a key that already exists will override the existing value.
 
 ```scss
 // main.scss
 @use "uniform" as * with (
   $config: (
-    colors: null,
     extend: (
       colors: (
-        mainRed: red,
-        mainBlue: blue
+        red: #B20000,
+        ...
+      ),
+      leadings: (
+        loose: 1.6,
+        ...
       )
     )
   )
 );
 ```
 
-```css
-/* main.css */
-.bg-mainRed { background-color: red; }
-.bg-mainBlue { background-color: blue; }
+---
+
+## Disabling Theme Settings
+
+Passing in `null` will disable all default Uniform settings.
+
+```scss
+// main.scss
+@use "uniform" as * with (
+  $config: (
+    colors: null,
+    gradients: null
+  )
+);
 ```

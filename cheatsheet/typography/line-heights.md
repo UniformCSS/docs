@@ -56,30 +56,13 @@ You can customize each `leading` by overriding the following CSS custom properti
 
 ```css
 :root {
-  --leading-100: 1;
-  --leading-110: 1.1;
-  --leading-120: 1.2;
-  --leading-130: 1.3;
-  --leading-140: 1.4;
-  --leading-150: 1.5;
-  --leading-160: 1.6;
-  --leading-170: 1.7;
-  --leading-180: 1.8;
-  --leading-190: 1.9;
-  --leading-200: 2;
-  --leading-210: 2.1;
-  --leading-220: 2.2;
-  --leading-230: 2.3;
-  --leading-240: 2.4;
-  --leading-250: 2.5;
-
-  --tracking-tightest: -0.08em;
-  --tracking-tighter: -0.04em;
-  --tracking-tight: -0.02em;
-  --tracking-normal: 0;
-  --tracking-loose: 0.02em;
-  --tracking-looser: 0.04em;
-  --tracking-loosest: 0.08em;
+  --leading-tightest: 1.125;
+  --leading-tighter: 1.25;
+  --leading-tight: 1.375;
+  --leading-normal: 1.5;
+  --leading-loose: 1.625;
+  --leading-looser: 1.75;
+  --leading-loosest: 1.875;
 }
 ```
 

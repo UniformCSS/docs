@@ -58,8 +58,7 @@ The following advanced build setting definitions apply.
 | Setting | Default | Description |
 | - | - | - |
 | `headless` | `false` | Loads Uniform CSS in Headless Mode. |
-| `placeholders` | `false` | Builds with placeholder selectors enabled. |
-| `dark-support` | `false` | Enable dark pseudo across all properties. |
+| `comma-compression` | `false` | Collapses pseudo variants. |
 
 {.text-left style=""}
 
@@ -75,26 +74,40 @@ When `headless` is enabled, Uniform CSS will be loaded but nothing will be gener
 );
 ```
 
-### Placeholders
+### Comma Compression
 
-When `placeholders` is enabled, every property will also generate Sass placeholder selector that can be extended. This setting must be enabled to use the `apply()` helper mixin feature.
+When `comma-compression` is enabled, pseudo variants will be joined to its standard parent using the comma selector. Enabling this setting will reduce the final output size however slightly increase build time.
 
 ```scss
+// main.scss
+
 @use "uniform" as * with (
-  $config: (
-    placeholders: true, // false by default
+  $config: (    
+    comma-compression: true
   )
 );
 ```
 
-### Dark Mode Support
+```css
+/* main.css */
 
-When `dark-support` is enabled, color or opacity related properties will also generate a dark pseudo variant.
-
-```scss
-@use "uniform" as * with (
-  $config: (
-    dark-support: true, // false by default
-  )
-);
+.bg-opacity-50, 
+.focus\.bg-opacity-50:focus, 
+.group:hover .group-hover\.bg-opacity-50, 
+.hover\.bg-opacity-50:hover {
+  --bg-opacity: 0.5;
+}
+.bg-opacity-55, 
+.focus\.bg-opacity-55:focus, 
+.group:hover .group-hover\.bg-opacity-55, 
+.hover\.bg-opacity-55:hover {
+  --bg-opacity: 0.55;
+}
+.bg-opacity-60, 
+.focus\.bg-opacity-60:focus, 
+.group:hover .group-hover\.bg-opacity-60, 
+.hover\.bg-opacity-60:hover {
+  --bg-opacity: 0.6;
+}
+...
 ```

@@ -52920,12 +52920,6 @@ MARKDOWN PLUGIN
 --markdown-link-hover-color
 ================================================== 
 */
-.markdown {
-  font-size: var(--markdown-font-size, var(--font-md));
-  line-height: var(--markdown-leading, var(--leading-looser));
-  color: var(--markdown-color, rgba(var(--gray-600), 1));
-}
-
 .markdown > h1,
 .markdown > h2,
 .markdown > h3,
@@ -53005,10 +52999,34 @@ MARKDOWN PLUGIN
 PARAGRAPH
 ================================================== 
 */
-.markdown > p, .markdown > ul p, .markdown > ol p {
+.markdown > p,
+.markdown > blockquote p,
+.markdown > table,
+.markdown > ul,
+.markdown > ul p,
+.markdown > ol p {
   margin-top: var(--markdown-p-margin, 1.5rem);
   margin-bottom: var(--markdown-p-margin, 1.5rem);
+  font-size: var(--markdown-p-font-size, var(--font-md));
   font-weight: var(--markdown-p-weight, var(--regular));
+  line-height: var(--markdown-p-leading, var(--leading-looser));
+  color: var(--markdown-p-color, rgba(var(--gray-600), 1));
+}
+.markdown > p:first-child,
+.markdown > blockquote p:first-child,
+.markdown > table:first-child,
+.markdown > ul:first-child,
+.markdown > ul p:first-child,
+.markdown > ol p:first-child {
+  margin-top: 0;
+}
+.markdown > p:last-child,
+.markdown > blockquote p:last-child,
+.markdown > table:last-child,
+.markdown > ul:last-child,
+.markdown > ul p:last-child,
+.markdown > ol p:last-child {
+  margin-bottom: 0;
 }
 
 /* 
@@ -53165,8 +53183,8 @@ STRONG
 .markdown > ol li strong,
 .markdown > ul li strong,
 .markdown > table td strong {
-  font-weight: var(--markdown-strong-weight, 700);
-  color: var(--markdown-strong-color, black);
+  font-weight: var(--markdown-strong-weight, var(--bold));
+  color: var(--markdown-strong-color, rgba(var(--gray-700), 1));
 }
 
 /* 

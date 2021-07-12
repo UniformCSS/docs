@@ -1,5 +1,5 @@
 ---
-title: Exclude Settings
+title: Excludes Settings
 description: Control which CSS properties are included and excluded.
 date: 2021-01-03
 ---
@@ -7,7 +7,7 @@ date: 2021-01-03
 
 ## Exclude Settings
 
-The `excludes` and `includes` settings are a Sass list that tell Uniform which CSS properties should be included or excluded. By default all Uniform supported CSS properties are included.
+The `excludes` and `includes` settings control which CSS properties should be included or excluded during build. By default, all Uniform supported CSS properties are included.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 

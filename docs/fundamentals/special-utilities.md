@@ -33,7 +33,7 @@ The `text-<size>` special utility differs from `font-<size>` in that it applies 
 
 ## Directional Shorthands
 
-You can apply directional properties like `padding` and `margin` horizontally and vertically using the `x` and `y` shorthand. For more information, visit [directional shorthands](/docs/directional-shorthands).
+You can apply directional properties like `padding` and `margin` horizontally and vertically using the `x` and `y` shorthand. For more information, visit [Directional](/docs/directional).
 
 ```html
 <div class="px-20 my-32">

@@ -6,7 +6,7 @@ date: 2021-01-02
 
 ## Drop-in Configuration
 
-Although you may not get the full customization freedom that the Sass version provides, the CDN version still provides lots of ways to customize Uniform CSS in the form of CSS variables (custom properties).
+Although you may not get the full customization freedom that the Sass version provides, the CDN version is the easiest way to customize and get started with Uniform.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -14,7 +14,7 @@ Although you may not get the full customization freedom that the Sass version pr
 
 ## Accessing CDN Build
 
-Loading Uniform CSS through a CDN is the quickest and easiest way to get up and running. Include the following CDN stylesheet in the head of your HTML.
+Simply load the stylesheet via CDN or locally and override variables using CSS variables (custom properties).
 
 ```html
 <link href="https://cdn.jsdelivr.net/npm/uniformcss/css/uniform.min.css" rel="stylesheet">
@@ -23,7 +23,9 @@ Loading Uniform CSS through a CDN is the quickest and easiest way to get up and 
 ```css
 :root {
   --font-sans: 'Inter';
-  --primary-hue: 46;
+  --font-md: 0.937rem;
+  --semibold: 500;
+  --bold: 800;
 }
 ```
 

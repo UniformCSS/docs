@@ -79,12 +79,6 @@ MARKDOWN PLUGIN
 ================================================== 
 */
 
-.markdown {
-	font-size: var(--markdown-font-size, font(md));
-	line-height: var(--markdown-leading, leading(looser));
-	color: var(--markdown-color, fill(gray-600));
-}
-
 .markdown > h1,
 .markdown > h2,
 .markdown > h3,
@@ -165,10 +159,24 @@ PARAGRAPH
 ================================================== 
 */
 
-.markdown > p, .markdown > ul p, .markdown > ol p {
+.markdown > p, 
+.markdown > blockquote p, 
+.markdown > table,
+.markdown > ul, 
+.markdown > ul p, 
+.markdown > ol p {
 	margin-top: var(--markdown-p-margin, size(24));
 	margin-bottom: var(--markdown-p-margin, size(24));
+	font-size: var(--markdown-p-font-size, font(md));
 	font-weight: var(--markdown-p-weight, font(regular));
+	line-height: var(--markdown-p-leading, leading(looser));
+	color: var(--markdown-p-color, fill(gray-600));
+	&:first-child {
+		margin-top: 0;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 /* 
@@ -332,8 +340,8 @@ STRONG
 .markdown > ol li strong,
 .markdown > ul li strong,
 .markdown > table td strong {
-	font-weight: var(--markdown-strong-weight, 700);
-	color: var(--markdown-strong-color, black);
+	font-weight: var(--markdown-strong-weight, font(bold));
+	color: var(--markdown-strong-color, fill(gray-700));
 }
 
 /* 

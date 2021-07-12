@@ -6,7 +6,7 @@
 /*! Uniform CSS v0.9.0 | MIT License | github.com/ThinkUniform/uniformcss */
 
 // ==================================================
-// USER CONFIG
+// User config
 // ==================================================
 
 $config: (
@@ -14,7 +14,7 @@ $config: (
 ) !default;
 
 // ==================================================
-// DEFAULT CONFIG
+// Default config
 // ==================================================
 
 @function rem($size-in-pixel) {
@@ -91,18 +91,21 @@ $config: (
 }
 
 $default-config: (
+
+  // Build settings
   important: false,
   prefix: null,
   delimiter: '-',
   pseudo-delimiter: '.',
   screen-delimiter: '.',
-
   headless: false,
   comma-compression: false,
-
+  
+  // Excludes settings
   excludes: (),
   includes: (),
 
+  // Theme settings
   extend: (
     shadows: (),
     colors: (),
@@ -650,13 +653,13 @@ $default-config: (
 ) !default;
 
 // ==================================================
-// CONFIG COMPILER
+// Config compiler
 // ==================================================
 
 $all-config: map.deep-merge($default-config, $config);
 
 // ==================================================
-// FETCHED VARIABLES
+// Fetched variables
 // ==================================================
 
 $important: map.get($all-config, important);
@@ -714,10 +717,10 @@ $extend-colors: map.get($all-config, extend, colors);
 $extend-gradients: map.get($all-config, extend, gradients);
 
 // ==================================================
-// PRIVATE FUNCTIONS
+// Private functions
 // ==================================================
 
-// MULTIPLE MAP MERGE FUNCTION
+// Multiple map merge function
 @function merge($maps...) {
   $collection: ();
   @each $map in $maps {
@@ -742,7 +745,7 @@ $extend-gradients: map.get($all-config, extend, gradients);
   @return $collection;
 }
 
-// GENERATE SCREENS MAP
+// Generate screens map
 @function name-screens() {
   $named-screens: ();
   @each $key, $value in $screens {
@@ -754,21 +757,18 @@ $extend-gradients: map.get($all-config, extend, gradients);
   @return $named-screens;
 }
 
-// TREE MAP MERGER
-
-
 // ==================================================
-// MERGED VARIABLES
+// Merged variables
 // ==================================================
 
-// MERGED SCREENS
+// Merged screens
 $merged-screens: ();
 @if $screens != null {
   $merged-screens: map.deep-merge($merged-screens, $screens);
 }
 $merged-screens: map.deep-merge($merged-screens, $extend-screens);
 
-// MERGED SIZES
+// Merged Sizes
 $merged-positive-sizes: ();
 @if $positive-sizes != null {
   $merged-positive-sizes: map.deep-merge($merged-positive-sizes, $positive-sizes);
@@ -791,77 +791,77 @@ $merged-sizes: ();
 $merged-sizes: map.deep-merge($merged-sizes, $extend-positive-sizes);
 $merged-sizes: map.deep-merge($merged-sizes, $extend-negative-sizes);
 
-// MERGED SHADOWS
+// Merged shadows
 $merged-shadows: ();
 @if $shadows != null {
   $merged-shadows: map.deep-merge($merged-shadows, $shadows);
 }
 $merged-shadows: map.deep-merge($merged-shadows, $extend-shadows);
 
-// MERGED FONT FAMILIES
+// Merged font-families
 $merged-font-families: ();
 @if $font-families != null {
   $merged-font-families: map.deep-merge($merged-font-families, $font-families);
 }
 $merged-font-families: map.deep-merge($merged-font-families, $extend-font-families);
 
-// MERGED FONT SIZES
+// Merged font-sizes
 $merged-font-sizes: ();
 @if $font-sizes != null {
   $merged-font-sizes: map.deep-merge($merged-font-sizes, $font-sizes);
 }
 $merged-font-sizes: map.deep-merge($merged-font-sizes, $extend-font-sizes);
 
-// MERGED WEIGHTS
+// Merged font-weights
 $merged-font-weights: ();
 @if $font-weights != null {
   $merged-font-weights: map.deep-merge($merged-font-weights, $font-weights);
 }
 $merged-font-weights: map.deep-merge($merged-font-weights, $extend-font-weights);
 
-// MERGED LEADINGS
+// Merged leadings
 $merged-leadings: ();
 @if $leadings != null {
   $merged-leadings: map.deep-merge($merged-leadings, $leadings);
 }
 $merged-leadings: map.deep-merge($merged-leadings, $extend-leadings);
 
-// MERGED TRACKINGS
+// Merged trackings
 $merged-trackings: ();
 @if $trackings != null {
   $merged-trackings: map.deep-merge($merged-trackings, $trackings);
 }
 $merged-trackings: map.deep-merge($merged-trackings, $extend-trackings);
 
-// MERGED RADIUSES
+// Merged radiuses
 $merged-radiuses: ();
 @if $radiuses != null {
   $merged-radiuses: map.deep-merge($merged-radiuses, $radiuses);
 }
 $merged-radiuses: map.deep-merge($merged-radiuses, $extend-radiuses);
 
-// MERGED BLURS
+// Merged blurs
 $merged-blurs: ();
 @if $blurs != null {
   $merged-blurs: map.deep-merge($merged-blurs, $blurs);
 }
 $merged-blurs: map.deep-merge($merged-blurs, $extend-blurs);
 
-// MERGED OPACITY LEVELS
+// Merged opacity levels
 $merged-opacities: ();
 @if $opacities != null {
   $merged-opacities: map.deep-merge($merged-opacities, $opacities);
 }
 $merged-opacities: map.deep-merge($merged-opacities, $extend-opacities);
 
-// MERGED COLORS
+// Merged Colors
 $merged-colors: ();
 @if $colors != null {
   $merged-colors: map.deep-merge($merged-colors, $colors);
 }
 $merged-colors: map.deep-merge($merged-colors, $extend-colors);
 
-// MERGED GRADIENTS
+// Merged Gradients
 $merged-gradients: ();
 @if $gradients != null {
   $merged-gradients: map.deep-merge($merged-gradients, $gradients);
@@ -870,10 +870,10 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
 
 
 // ==================================================
-// HELPER FUNCTIONS
+// Helper function
 // ==================================================
 
-// GET SCREEN FUNCTIONS
+// Get screen function
 @function screen($screen) {
   $result: ();
   @if map.get($all-config, screens, $screen) {
@@ -887,7 +887,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
   @return $result;
 }
 
-// GET COLOR FUNCTIONS
+// Get gradient function
 @function gradient($gradient) {
   @if map.get($merged-gradients, $gradient) {
     $result: map.get($merged-gradients, $gradient);
@@ -908,6 +908,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
   @return $result;
 }
 
+// Get opacities function
 @function opacities() {
   $result: ();
   @each $key, $value in $merged-opacities {
@@ -919,7 +920,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
   @return $result;
 }
 
-// GET COLORS FUNCTIONS
+// Get color function
 @function fill($key, $opacity: 1) {
   $result: ();
   @if map.has-key($merged-colors, $key) {
@@ -943,7 +944,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
 }
 
 
-// GET RADIUS FUNCTION
+// Get radius function
 @function radius($radius) {
   @if map.get($merged-radiuses, $radius) {
     $result: var(--radius-#{$radius});
@@ -964,7 +965,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
   @return $result;
 }
 
-// GET BLUR FUNCTION
+// Get blur function
 @function blur($blur) {
   @if map.get($merged-blurs, $blur) {
     $result: var(--blur-#{$blur});
@@ -985,7 +986,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
   @return $result;
 }
 
-// GET SHADOW FUNCTIONS
+// Get shadow function
 @function shadow($shadow) {
   @if map.get($merged-shadows, $shadow) {
     $result: var(--shadow-#{$shadow});
@@ -1006,7 +1007,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
   @return $result;
 }
 
-// GET SIZE FUNCTIONS
+// Get size function
 @function positive-sizes($limit: null) {
   @if $limit != null {
     $size-map: ();
@@ -1085,7 +1086,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
   }
 }
 
-// GET TYPOGRAPHY FUNCTIONS
+// Get typography functions
 @function font($font) {
   @if map.get($merged-font-families, $font) {
     $result: var(--font-#{$font});
@@ -1237,7 +1238,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
 }
 
 // ==================================================
-// HELPER MIXINS
+// Helper mixins
 // ==================================================
 
 @mixin screen($screen) {

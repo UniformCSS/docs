@@ -14,7 +14,7 @@ Customizations in Uniform CSS are all handled from the root of your Sass project
 
 ## Basic Usage
 
-The `uniform` module and can be configured by passing in settings to the `$config` map. To learn more about modules, visit the [official Sass docs](https://sass-lang.com/documentation/at-rules/use).
+The `uniform` module can be configured by passing in settings to the `$config` map. To learn more about modules, visit the official [Sass docs](https://sass-lang.com/documentation/at-rules/use).
 
 ```scss
 // main.scss
@@ -38,7 +38,7 @@ The `uniform` module and can be configured by passing in settings to the `$confi
 
 ## Setting Groups
 
-It is helpful to note, there are four types of settings you can pass into your configuration, build, theme, utility, and excludes. 
+It is helpful to note, there are four types of settings you can pass into your configuration, build, theme, utilities, and excludes. 
 
 ### Build Settings
 
@@ -71,9 +71,9 @@ Theme settings are universally shared settings such as breakpoints, sizes, and c
 );
 ```
 
-### Utility Settings
+### Utilities Settings
 
-Utility settings specifies the individual setting of each property.
+Utilities settings specify the individual setting of each property.
 
 ```scss
 @use "uniform" as * with (
@@ -88,7 +88,7 @@ Utility settings specifies the individual setting of each property.
 );
 ```
 
-### Exclude Settings
+### Excludes Settings
 
 Exclude and include settings specifies which properties should be excluded and included.
 
@@ -107,4 +107,3 @@ Exclude and include settings specifies which properties should be excluded and i
   )
 );
 ```
-

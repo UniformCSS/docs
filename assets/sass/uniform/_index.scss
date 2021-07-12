@@ -5,28 +5,28 @@
 @use "sass:meta";
 @use "sass:selector";
 
-// DEFAULTS (3)
+// Defaults (4)
 @use "core/root";
 @use "core/keyframes";
 @use "core/reset";
 @use "core/starter";
 
-// UTILITIES - ANIMATION (1)
+// Utilities - Animation (1)
 @use "utilities/animation/core-animation";
 
-// UTILITIES - INTERACTIVE (5)
+// Utilities - Interactive (5)
 @use "utilities/interactive/core-cursor";
 @use "utilities/interactive/core-pointer-events";
 @use "utilities/interactive/core-resize";
 @use "utilities/interactive/core-scrolling";
 @use "utilities/interactive/core-user-select";
 
-// UTILITIES - SVG (3)
+// Utilities - SVG (3)
 @use "utilities/svg/core-fill";
 @use "utilities/svg/core-stroke";
 @use "utilities/svg/core-stroke-width";
 
-// UTILITIES - TRANSFORM (10)
+// Utilities - Transform (10)
 @use "utilities/transform/extension-translate-x";
 @use "utilities/transform/extension-translate-y";
 @use "utilities/transform/extension-scale-x";
@@ -38,7 +38,7 @@
 @use "utilities/transform/core-transform-origin";
 @use "utilities/transform/core-transform";
 
-// UTILITIES - GRID (9)
+// Utilities - Grid (9)
 @use "utilities/grid/core-grid-auto-flow";
 @use "utilities/grid/core-grid-column";
 @use "utilities/grid/core-grid-column-end";
@@ -49,7 +49,7 @@
 @use "utilities/grid/core-grid-template-columns";
 @use "utilities/grid/core-grid-template-rows";
 
-// UTILITIES - FLEXBOX (6)
+// Utilities - Flexbox (6)
 @use "utilities/flexbox/core-flex";
 @use "utilities/flexbox/core-flex-direction";
 @use "utilities/flexbox/core-flex-grow";
@@ -57,17 +57,17 @@
 @use "utilities/flexbox/core-flex-wrap";
 @use "utilities/flexbox/core-order";
 
-// UTILITIES - GUTTER (3)
+// Utilities - Gutter (3)
 @use "utilities/gutter/extension-gutter-reverse";
 @use "utilities/gutter/extension-gutter-x";
 @use "utilities/gutter/extension-gutter-y";
 
-// UTILITIES - GAP (3)
+// Utilities - Gap (3)
 @use "utilities/gap/core-gap";
 @use "utilities/gap/core-column-gap";
 @use "utilities/gap/core-row-gap";
 
-// UTILITIES - POSITION (8)
+// Utilities - Position (8)
 @use "utilities/position/core-bottom";
 @use "utilities/position/core-left";
 @use "utilities/position/core-right";
@@ -77,7 +77,7 @@
 @use "utilities/position/extension-xy";
 @use "utilities/position/core-z-index";
 
-// UTILITIES - COMPOSITION (8)
+// Utilities - Composition (8)
 @use "utilities/composition/extension-ratio";
 @use "utilities/composition/core-box-sizing";
 @use "utilities/composition/core-clear";
@@ -87,7 +87,7 @@
 @use "utilities/composition/core-position";
 @use "utilities/composition/core-table-layout";
 
-// UTILITIES - SCROLL (7)
+// Utilities - Scroll (7)
 @use "utilities/scroll/core-overflow-x";
 @use "utilities/scroll/core-overflow-y";
 @use "utilities/scroll/core-overflow";
@@ -96,7 +96,7 @@
 @use "utilities/scroll/core-overscroll";
 @use "utilities/scroll/core-scroll-behavior";
 
-// UTILITIES - EFFECT (12)
+// Utilities - Effect (12)
 @use "utilities/effect/core-box-shadow";
 @use "utilities/effect/core-mix-blend-mode";
 @use "utilities/effect/extension-backdrop-grayscale";
@@ -110,7 +110,7 @@
 @use "utilities/effect/extension-filter-blur";
 @use "utilities/effect/core-filter";
 
-// UTILITIES - BORDER (21)
+// Utilities - Border (21)
 @use "utilities/border/extension-border-opacity";
 @use "utilities/border/extension-border-bottom-radius";
 @use "utilities/border/extension-border-left-radius";
@@ -132,7 +132,7 @@
 @use "utilities/border/core-border-color";
 @use "utilities/border/core-border-style";
 
-// UTILITIES - PADDING (7)
+// Utilities - Padding (7)
 @use "utilities/padding/core-padding-bottom";
 @use "utilities/padding/core-padding-left";
 @use "utilities/padding/core-padding-right";
@@ -141,7 +141,7 @@
 @use "utilities/padding/extension-padding-y";
 @use "utilities/padding/core-padding";
 
-// UTILITIES - MARGIN (7)
+// Utilities - Margin (7)
 @use "utilities/margin/core-margin-bottom";
 @use "utilities/margin/core-margin-left";
 @use "utilities/margin/core-margin-right";
@@ -150,7 +150,7 @@
 @use "utilities/margin/extension-margin-y";
 @use "utilities/margin/core-margin";
 
-// UTILITIES - ALIGNMENT (7)
+// Utilities - Alignment (7)
 @use "utilities/alignment/core-align-content";
 @use "utilities/alignment/core-align-items";
 @use "utilities/alignment/core-align-self";
@@ -159,7 +159,7 @@
 @use "utilities/alignment/core-justify-self";
 @use "utilities/alignment/core-vertical-align";
 
-// UTILITIES - SIZING (6)
+// Utilities - Sizing (6)
 @use "utilities/sizing/core-height";
 @use "utilities/sizing/core-width";
 @use "utilities/sizing/core-min-height";
@@ -167,11 +167,11 @@
 @use "utilities/sizing/core-max-height";
 @use "utilities/sizing/core-max-width";
 
-// UTILITIES - PLACEHOLDER (3)
+// Utilities - Placeholder (2)
 @use "utilities/placeholder/core-placeholder-color";
 @use "utilities/placeholder/extension-placeholder-opacity";
 
-// UTILITIES - APPEARANCE (6)
+// Utilities - Appearance (6)
 @use "utilities/appearance/core-display";
 @use "utilities/appearance/core-opacity";
 @use "utilities/appearance/core-outline";
@@ -179,7 +179,7 @@
 @use "utilities/appearance/core-appearance";
 @use "utilities/appearance/core-font-smooth";
 
-// UTILITIES - BACKGROUND (9)
+// Utilities - Background (9)
 @use "utilities/background/extension-background-opacity";
 @use "utilities/background/core-background-attachment";
 @use "utilities/background/core-background-clip";
@@ -189,14 +189,14 @@
 @use "utilities/background/core-background-size";
 @use "utilities/background/core-background";
 
-// UTILITIES - TRANSITION (5)
+// Utilities - Transition (5)
 @use "utilities/transition/core-transition-duration";
 @use "utilities/transition/core-transition-delay";
 @use "utilities/transition/core-transition-property";
 @use "utilities/transition/core-transition-timing-function";
 @use "utilities/transition/core-transition";
 
-// UTILITIES - TYPOGRAPHY (19)
+// Utilities - Typography (19)
 @use "utilities/typography/extension-color-opacity";
 @use "utilities/typography/core-letter-spacing";
 @use "utilities/typography/core-line-height";
@@ -216,7 +216,10 @@
 @use "utilities/typography/extension-text-size";
 @use "utilities/typography/core-color";
 
-// CONSTRUCTOR
+// ==================================================
+// Constructor
+// ==================================================
+
 $config: map.deep-merge(core.$all-config, core.$config);
 
 $standard-class-set: ();
@@ -268,11 +271,11 @@ $responsive-pseudo-set: ();
 	$all-pseudos: map.get($config, pseudos);
 	$all-screens: map.get($config, screens);
 
-	// MAP GENERATION
+	// Map generation
 	@each $utility, $utility-value in $utilities {
 		@if (list.index($excludes, all) == null and list.index($excludes, $utility) == null) {
 
-			// SETUP INITIAL VARIABLES
+			// Setup initial variables
 			$shorthand: map.get($utility-value, shorthand);
 			$extra-selector: map.get($utility-value, extra-selector);
 			$responsive: map.get($utility-value, responsive);
@@ -281,7 +284,7 @@ $responsive-pseudo-set: ();
 			$properties: map.get($utility-value, properties);
 			$static-properties: map.get($utility-value, static-properties);
 
-			// MERGE EXTENDED VARIANTS
+			// Merge extended variants
 			$variants: map.get($utility-value, variants);
 			$variant-extends: map.get($utility-value, extend, variants);
 			$merged-variants: ();
@@ -292,7 +295,7 @@ $responsive-pseudo-set: ();
 				$merged-variants: map.merge($merged-variants, $variant-extends);
 			}
 
-			// MERGE EXTENDED PSEUDOS
+			// Merge extended pseudos
 			$pseudos: map.get($utility-value, pseudos);
 			$pseudo-extends: map.get($utility-value, extend, pseudos);
 			$merged-pseudos: ();
@@ -303,12 +306,12 @@ $responsive-pseudo-set: ();
 				$merged-pseudos: list.join($merged-pseudos, $pseudo-extends, $separator: comma);
 			}
 
-			// STANNDARD CLASS SET
+			// Standard class list
 			$class-set: ();
 			$pseudo-set: ();
 			
 			@each $merged-variant, $merged-variant-value in $merged-variants {
-				// COMPILE CLASS NAME
+				// Compile class name
 				$compiled-class-name: null;
 				@if $shorthand == null {
 					@if $merged-variant == null {
@@ -324,7 +327,7 @@ $responsive-pseudo-set: ();
 					};
 				}
 
-				// MERGE PROPERTIES
+				// Merge properties
 				$merged-properties: ();
 				@if meta.type-of($merged-variant-value) == map {
 					@each $key, $value in $merged-variant-value {
@@ -357,7 +360,7 @@ $responsive-pseudo-set: ();
 				);
 				$class-set: map.merge($class-set, $map);
 
-				// for EACH PSEUDO do the following
+				// For EACH PSEUDO do the following
 				@each $pseudo in $merged-pseudos {
 					$compiled-pseudo-name: #{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name};
 					@if $pseudo == group-hover {
@@ -409,14 +412,14 @@ $responsive-pseudo-set: ();
 			$standard-pseudo-set: map.merge($standard-pseudo-set, $pseudo-set) !global;
 
 
-			// RESPONSIVE CLASS SET
+			// Respnsive class set
 			@if $responsive == true {
 				@each $screen, $screen-value in $all-screens {
 					$class-set: ();
 					$pseudo-set: ();
 					@each $merged-variant, $merged-variant-value in $merged-variants {
 
-						// COMPILE CLASS NAME
+						// Compile class name
 						$compiled-class-name: null;
 						@if $shorthand == null {
 							@if $merged-variant == null {
@@ -432,7 +435,7 @@ $responsive-pseudo-set: ();
 							};
 						}
 			
-						// MERGE PROPERTIES
+						// Merge properties
 						$merged-properties: ();
 						@if meta.type-of($merged-variant-value) == map {
 							@each $key, $value in $merged-variant-value {
@@ -536,7 +539,7 @@ $standard-class-set: map.merge($standard-class-set, $standard-pseudo-set);
 $responsive-class-set: map.merge($responsive-class-set, $responsive-pseudo-set);
 $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
 
-// CLASS GENERATION
+// Class generation
 @if map.get($config, headless) == false {
 	@if map.get($config, comma-compression) == true {
 		@each $class, $detail in $standard-class-set {
@@ -755,6 +758,5 @@ $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
 				}
 			}
 		}
-		
   }
 }

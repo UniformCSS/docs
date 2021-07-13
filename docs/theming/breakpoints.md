@@ -6,9 +6,10 @@ date: 2021-01-01
 
 ## Breakpoints
 
-By default, responsive properties will be generated for each breakpoint. Breakpoints are defined as `screens` in Uniform and breakpoints can be overwritten or extended.
+By default, all properties that have the `responsive` setting enabled will generate a screen specific variants for each breakpoint. Breakpoint settings are defined as `screens` in your configuration and these can be both overwritten or extended.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
+
 
 ---
 
@@ -32,7 +33,7 @@ By default, there are **3 breakpoints**. The following default breakpoint config
 
 ## Basic Usage
 
-The following example showcases how the variants can be applied.
+To apply breakpoint specific utilities, append the target screen with the utility class name. Responsive properties are designed to be mobile-first, this means the smaller screen breakpoints will cascade upwards unless specified otherwise.
 
 ```html
 <div class="h-10 sm.h-14 md.h-20 lg.h-24">
@@ -47,7 +48,7 @@ The following example showcases how the variants can be applied.
 
 ## Breakpoint Delimiter
 
-By default, Uniform uses the `.` character to separate the breakpoints and pseudos from the property. You can override the default breakpoint delimiter by defining `screen-delimiter` in your configuration.
+By default, Uniform uses the `.` character to separate the breakpoints from the property. You can override the default breakpoint delimiter by defining `screen-delimiter` in your configuration.
 
 ```scss
 // main.scss
@@ -99,7 +100,7 @@ You can change the number of breakpoints and even change their `min-width` value
 @use "uniform" as * with (
   $config: (
     screens: (
-      custom-breakpoint: 1920px
+      xl: 1400px
     )
   )
 );
@@ -107,14 +108,14 @@ You can change the number of breakpoints and even change their `min-width` value
 
 ```css
 /* main.css */
-@media (min-width: 1920px) {
-  .custom-breakpoint\.block {
+@media (min-width: 1400px) {
+  .xl\.block {
     display: block;
   }
-  .custom-breakpoint\.flex {
+  .xl\.flex {
     display: flex;
   }
-  ...;
+  ...
 }
 ```
 
@@ -128,7 +129,7 @@ You can replace existing breakpoints by overriding existing keys in the `screens
 @use "uniform" as * with (
   $config: (
     screens: (
-      md: 1920px
+      md: 1440px
     )
   )
 );
@@ -136,7 +137,7 @@ You can replace existing breakpoints by overriding existing keys in the `screens
 
 ```css
 /* main.css */
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .md\.block {
     display: block;
   }

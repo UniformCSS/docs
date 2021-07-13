@@ -14,7 +14,7 @@ Border radiuses can be configured by passing in key values pairs to the `radiuse
 
 ## Default Radiuses
 
-The following default radius configurations are applied. To see a more visual reference of all radiuses, visit [Cheatsheet](/cheatsheet/border-radiuses).
+The following default radius configurations are applied. To see a visual reference of all available radiuses, visit [Cheatsheet](/cheatsheet/border-radiuses).
 
 ```scss
 @use "uniform" as * with (
@@ -26,8 +26,8 @@ The following default radius configurations are applied. To see a more visual re
       md: rem(8),
       lg: rem(12),
       xl: rem(16),
-      2xl: rem(24),
-    ),
+      2xl: rem(24)
+    )
   )
 )
 ```
@@ -36,7 +36,7 @@ The following default radius configurations are applied. To see a more visual re
 
 ## Customizing via Sass
 
-You can add your own radius by passing in key value pairs to the `radiuses` map in your configuration. Customizations applied to the `radiuses` setting will be universally applied across all border radius related properties such as `border-radius`, `border-top-right-radius` etc.
+To customize radiuses, pass in key value pairs to the `radiuses` map in your configuration. Customizations applied to the `radiuses` setting will be universally applied across all border radius related properties such as `border-radius`, `border-top-right-radius` etc.
 
 ```scss
 // main.scss
@@ -65,7 +65,7 @@ You can add your own radius by passing in key value pairs to the `radiuses` map 
 
 ## Customizing via CDN
 
-If you are using the CDN version of Uniform CSS, you can still customizing default settings by overriding CSS variables.
+If you are using the precompiled version of Uniform, you can customize theme properties by overriding predefined CSS variables. 
 
 ```css
 :root {
@@ -83,11 +83,15 @@ If you are using the CDN version of Uniform CSS, you can still customizing defau
 
 ## Disabling Defaults
 
-You can remove all default radiuses by passing `null` to the `radiuses` setting.
+If you wish to remove defaults, pass `null` to any theme property. Additionally, you can add your own by assigning theme settings to the `extend` map.
 
 ```scss
 @use "uniform" as * with (
   $config: (
-    radiuses: null
+    radiuses: null,
+
+    extend: (
+      card: 8px
+    )
   )
 )

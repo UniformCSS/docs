@@ -82,7 +82,7 @@ The following theme setting definitions apply.
 
 ## Overriding Theme Settings
 
-To override base theme settings, pass key value pairs to each setting in your configuration. Passing in key value pairs to each theme setting will completly remove all other default key value pairs in that setting.
+To override base theme settings, pass key value pairs to each setting in your configuration. If your key already exists it will override the existing value.
 
 ```scss
 // main.scss
@@ -111,40 +111,24 @@ To override base theme settings, pass key value pairs to each setting in your co
 
 ---
 
-## Extending Theme Settings
-
-If you wish to keep the default settings but wish to override or extend, you can pass theme settings under the `extend` setting instead. Passing in a key that already exists will override the existing value.
-
-```scss
-// main.scss
-@use "uniform" as * with (
-  $config: (
-    extend: (
-      colors: (
-        red: #B20000,
-        ...
-      ),
-      leadings: (
-        loose: 1.6,
-        ...
-      )
-    )
-  )
-);
-```
-
----
-
 ## Disabling Theme Settings
 
-Passing in `null` will disable all default Uniform settings.
+Passing in `null` will disable default settings. Additionally, you can pass in your own theme settings under the `extend` setting in your configuration.
 
 ```scss
 // main.scss
 @use "uniform" as * with (
   $config: (
     colors: null,
-    gradients: null
+    gradients: null,
+
+    extend: (
+      colors: (
+        primary: #0054CB
+      ),
+      gradients: (...),
+      opacities: (...)
+    )
   )
 );
 ```

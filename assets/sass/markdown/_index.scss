@@ -317,16 +317,8 @@ LINK
 .markdown > ol li a,
 .markdown > ul li a,
 .markdown > table td a {
-	color: var(--markdown-link-color, fill(blue-500));
-}
-
-.markdown > p a:hover,
-.markdown > blockquote a:hover,
-.markdown > ol li a:hover,
-.markdown > ul li a:hover,
-.markdown > table td a:hover {
-	color: var(--markdown-link-hover-color, fill(blue-500));
-	text-decoration: underline;
+	color: var(--markdown-link-color, fill(indigo-500));
+	box-shadow: var(--markdown-link-shadow, inset 0 -0.125em 0 0 #fff, inset 0 -0.375em 0 0 fill(indigo-500, .15))
 }
 
 /* 

@@ -21,40 +21,41 @@ The following default shadow configurations are applied. To see a more visual re
   $config: (
     shadows: (
       2xs: (
-        0 1px 2px 0 rgba(0, 0, 0, 0.1)
+        0 1px 2px 0 rgba(var(--gray-500), 0.1)
       ),
       xs: (
-        0 2px 4px rgba(0, 0, 0, 0.15)
+        0 2px 4px rgba(var(--gray-500), 0.15)
       ),
       sm: (
-        0 3px 6px rgba(0, 0, 0, 0.2)
+        0 3px 6px rgba(var(--gray-500), 0.2)
       ),
       md: (
-        0 4px 8px rgba(0, 0, 0, 0.25)
+        0 4px 8px rgba(var(--gray-500), 0.25)
       ),
       lg: (
-        0 6px 12px rgba(0, 0, 0, 0.3)
+        0 6px 12px rgba(var(--gray-500), 0.3)
       ),
       xl: (
-        0 12px 24px rgba(0, 0, 0, 0.35)
+        0 12px 24px rgba(var(--gray-500), 0.35)
       ),
       2xl: (
-        0 24px 48px rgba(0, 0, 0, 0.4)
+        0 24px 48px rgba(var(--gray-500), 0.4)
       ),
+
       focus: (
-        0 0 0 4px hsla(220, 75%, 50%, 20%)
-      ),
-      info: (
-        0 0 0 4px hsla(160, 80%, 50%, 20%)
+        0 0 0 4px rgba(var(--blue-500), 0.2)
       ),
       success: (
-        0 0 0 4px hsla(80, 75%, 50%, 20%)
+        0 0 0 4px rgba(var(--green-500), 0.2)
       ),
       warning: (
-        0 0 0 4px hsla(40, 75%, 50%, 20%)
+        0 0 0 4px rgba(var(--yellow-500), 0.2)
       ),
       danger: (
-        0 0 0 4px hsla(0, 75%, 50%, 20%)
+        0 0 0 4px rgba(var(--red-500), 0.2)
+      ),
+      info: (
+        0 0 0 4px rgba(var(--teal-500), 0.2)
       )
     )
   )
@@ -96,23 +97,22 @@ You can add your own shadows by passing in key value pairs to the `shadows` map 
 
 ## Customizing via CDN
 
-If you are using the CDN version of Uniform CSS, you can still customizing default settings by overriding CSS variables.
+If you are using the precompiled version of Uniform, you can customize theme properties by overriding predefined CSS variables. 
 
 ```css
 :root {
-  --shadow-card: 0 4px 60px 0 rgba(90, 134, 234, 0.2);
-  --shadow-2xs: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  --shadow-xs: 0 2px 4px rgba(0, 0, 0, 0.15);
-  --shadow-sm: 0 3px 6px rgba(0, 0, 0, 0.2);
-  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.25);
-  --shadow-lg: 0 6px 12px rgba(0, 0, 0, 0.3);
-  --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.35);
-  --shadow-2xl: 0 24px 48px rgba(0, 0, 0, 0.4);
-  --shadow-focus: 0 0 0 4px rgba(26, 94, 230, 0.2);
-  --shadow-info: 0 0 0 4px rgba(26, 230, 162, 0.2);
-  --shadow-success: 0 0 0 4px rgba(162, 230, 26, 0.2);
-  --shadow-warning: 0 0 0 4px rgba(230, 162, 26, 0.2);
-  --shadow-danger: 0 0 0 4px rgba(230, 26, 26, 0.2);
+  --shadow-2xs: 0 1px 2px 0 rgba(var(--gray-500), 0.1);
+  --shadow-xs: 0 2px 4px rgba(var(--gray-500), 0.15);
+  --shadow-sm: 0 3px 6px rgba(var(--gray-500), 0.2);
+  --shadow-md: 0 4px 8px rgba(var(--gray-500), 0.25);
+  --shadow-lg: 0 6px 12px rgba(var(--gray-500), 0.3);
+  --shadow-xl: 0 12px 24px rgba(var(--gray-500), 0.35);
+  --shadow-2xl: 0 24px 48px rgba(var(--gray-500), 0.4);
+  --shadow-focus: 0 0 0 4px rgba(var(--blue-500), 0.2);
+  --shadow-success: 0 0 0 4px rgba(var(--green-500), 0.2);
+  --shadow-warning: 0 0 0 4px rgba(var(--yellow-500), 0.2);
+  --shadow-danger: 0 0 0 4px rgba(var(--red-500), 0.2);
+  --shadow-info: 0 0 0 4px rgba(var(--teal-500), 0.2);
 }
 ```
 
@@ -120,11 +120,17 @@ If you are using the CDN version of Uniform CSS, you can still customizing defau
 
 ## Disabling Defaults
 
-You can remove all default shadows by passing `null` to the `shadows` setting.
+If you wish to remove defaults, pass `null` to any theme property. Additionally, you can add your own by assigning theme settings to the `extend` map.
 
 ```scss
 @use "uniform" as * with (
   $config: (
-    shadows: null
+    shadows: null,
+    
+    extend: (
+      shadows: (
+        custom: 0 4px 8px rgba(var(--gray-500), 0.25)
+      )
+    )
   )
 )

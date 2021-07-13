@@ -1,12 +1,12 @@
 ---
 title: Gradients
-description: Learn how to customize and manipulate gradients.
+description: Learn how to customize gradients.
 date: 2021-01-02
 ---
 
 ## About Gradients
 
-Uniform provides inline gradient support using the `bg-linear` utility. You can also add your own gradients using the `gradients` theme setting in your configuration. By default, Uniform also provides basic to and from, white and black gradients for horizontal and vertical directions.
+Uniform provides inline gradient support using the `bg-linear` utility. You can also add your own gradients using the `gradients` theme setting in your configuration.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -14,14 +14,18 @@ Uniform provides inline gradient support using the `bg-linear` utility. You can 
 
 ## Applying Inline Gradient
 
-To apply inline gradients, add the class `bg-linear`, `bg-radial`, or `bg-conic` to any element and override the `--gradient` CSS variable with your gradient.
+To apply inline gradients, add the class `bg-linear`, `bg-radial`, or `bg-conic` to any element and override the `--<type>-gradient` CSS variable with your gradient value.
 
 ```html
-<div class="bg-linear" style="--gradient: to right, #ffbebe, #4eff9d;">
+<div class="bg-linear" style="--linear-gradient: to right, #40C6FF 0%, #505BED 100%;">
   ...
 </div>
 
-<div class="bg-conic" style="--gradient: from 90deg at 50% 50%, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b;">
+<div class="bg-radial" style="--radial-gradient: circle at 50% 50%, #40c6ff, #505bed;">
+  ...
+</div>
+
+<div class="bg-conic" style="--conic-gradient: from 90deg at 50% 50%, #40c6ff, #505bed;">
   ...
 </div>
 ```
@@ -30,7 +34,7 @@ To apply inline gradients, add the class `bg-linear`, `bg-radial`, or `bg-conic`
 
 ## Default Gradients
 
-The following default gradient configurations are applied. To see a more visual reference of all the gradients, visit [Cheatsheet](/cheatsheet/gradients).
+The following default gradients are applied. To see a more visual reference of all the gradients, visit [Cheatsheet](/cheatsheet/gradients).
 
 ```scss
 @use "uniform" as * with (
@@ -82,15 +86,15 @@ You can add your own gradients by passing in key value pairs to the `gradients` 
 
 ## Customizing via CDN
 
-If you are using the CDN implementation, you can override the following gradient variable.
+If you are using the precompiled version of Uniform, you can customize theme properties by overriding predefined CSS variables. 
 
 ```css
 /* main.css */
 
 :root {
-  --linear: linear-gradient(var(--gradient, to right, #40C6FF 0%, #505BED 100%)),
-  --radial: radial-gradient(var(--gradient, circle at 50% 50%, #40c6ff, #505bed)),
-  --conic: conic-gradient(var(--gradient, from 90deg at 50% 50%, #40c6ff, #505bed)),
+  --linear: linear-gradient(to right, #40C6FF 0%, #505BED 100%);
+  --radial: radial-gradient(circle at 50% 50%, #40c6ff, #505bed);
+  --conic: conic-gradient(from 90deg at 50% 50%, #40c6ff, #505bed);
 }
 ```
 
@@ -98,11 +102,17 @@ If you are using the CDN implementation, you can override the following gradient
 
 ## Disabling Defaults
 
-You can remove all default gradients by passing `null` to the `gradients` setting.
+If you wish to remove defaults, pass `null` to any theme property. Additionally, you can add your own by assigning theme settings to the `extend` map.
 
 ```scss
 @use "uniform" as * with (
   $config: (
-    gradients: null
+    gradients: null,
+    
+    extend: (
+      gradient: (
+        custom: linear-gradient(to right, #40C6FF 0%, #505BED 100%)
+      )
+    )
   )
 )

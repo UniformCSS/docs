@@ -53,11 +53,15 @@ You can add your own blurs by passing in key value pairs to the `blurs` map in y
 ```css
 /* main.css */
 
+:root {
+  --blur-3xl: 72px;
+}
+
 .filter-blur-3xl {
-  --filter-blur: var(--blur-2xl);
+  --filter-blur: var(--blur-3xl);
 }
 .backdrop-blur-3xl {
-  --backdrop-blur: var(--blur-md);
+  --backdrop-blur: var(--blur-3xl);
 }
 ...
 ```
@@ -66,7 +70,7 @@ You can add your own blurs by passing in key value pairs to the `blurs` map in y
 
 ## Customizing via CDN
 
-If you are using the CDN version of Uniform CSS, you can still customizing default settings by overriding CSS variables.
+If you are using the precompiled version of Uniform, you can customize theme properties by overriding predefined CSS variables. 
 
 ```css
 :root {
@@ -84,11 +88,17 @@ If you are using the CDN version of Uniform CSS, you can still customizing defau
 
 ## Disabling Defaults
 
-You can remove all default blurs by passing `null` to the `blurs` setting.
+If you wish to remove defaults, pass `null` to any theme property. Additionally, you can add your own by assigning theme settings to the `extend` map.
 
 ```scss
 @use "uniform" as * with (
   $config: (
-    blurs: null
+    blurs: null,
+
+    extend: (
+      blurs: (
+        custom: 64px
+      )
+    )
   )
 )

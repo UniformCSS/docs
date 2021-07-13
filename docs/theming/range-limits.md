@@ -14,7 +14,7 @@ Size based properties such as `width` and `margin` utilize the [size maps](/docs
 
 ## Default Range Limits
 
-The following default range limit configurations are applied for each property type. For each property, the list represents the beginning and end range of supported size levels. For example, `(1, 41)` means that up to `41` levels of sizes are supported.
+The following default range limit configurations are applied for each property type. For each property, the list represents the beginning and end range of supported size levels. For example, `(1, 32)` means that up to `32` levels of sizes are supported.
 
 ```scss
 @use "uniform" as * with (
@@ -22,21 +22,20 @@ The following default range limit configurations are applied for each property t
     range-limits: (
       margin: (1, 32),
       padding: (1, 32),
-      width: (1, 32),
-      min-width: (1, 1),
-      max-width: (31, 42),
+      width: (1, 36),
+      min-width: (24, 36),
+      max-width: (24, 42),
       height: (1, 36),
-      min-height: (1, 1),
-      max-height: (1, 32),
-      gap: (1, 24),
-      gutter: (1, 24),
-      border-width: (1, 6),
-      split-width: (1, 6),
-      top: (1, 24),
-      right: (1, 24),
-      bottom: (1, 24),
-      left: (1, 24),
-      translate: (1, 24)
+      min-height: (24, 36),
+      max-height: (24, 36),
+      gap: (1, 32),
+      gutter: (1, 32),
+      border-width: (1, 4),
+      top: (1, 32),
+      right: (1, 32),
+      bottom: (1, 32),
+      left: (1, 32),
+      translate: (1, 32)
     ),
   )
 )

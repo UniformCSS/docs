@@ -1,12 +1,12 @@
 ---
 title: Special Utilities
-description: Learn about Uniform's extended properties
+description: Learn what special utilities are and how they work.
 date: 2021-01-08
 ---
 
 ## About Special Utilities
 
-Utility classes are low-level by design and typically only apply a single CSS property. Special utilities combine multiple CSS properties to provide extra commonly needed functionality.
+Utility classes, in general, are low-level by design and typically only apply a single CSS property, therefore, utilities are typically named based on the CSS property it represents. However, there may be times where it might make sense to combine more than one CSS property or name a utility based on its purpose rather than the CSS property it represents.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -33,7 +33,7 @@ The `text-<size>` special utility differs from `font-<size>` in that it applies 
 
 ## Directional Shorthands
 
-You can apply directional properties like `padding` and `margin` horizontally and vertically using the `x` and `y` shorthand. For more information, visit [Directional](/docs/directional).
+You can apply directional properties like `padding`, `border-width` and `margin` horizontally and vertically using the `x` and `y` shorthand. For more information, visit [Directional](/docs/directional).
 
 ```html
 <div class="px-20 my-32">
@@ -74,3 +74,25 @@ The `gutter` special utility applies margin-based horizontal or vertical spacing
   margin: 0 calc(var(--size-20) * var(--gutter-right)) 0 calc(var(--size-20) * var(--gutter-left));
 }
 ```
+
+---
+
+## Ratio
+
+The `ratio` special utility applies percentage based padding in order to simulate various common screen aspect ratios.
+
+```html
+<div class="ratio-16-9">
+  ...
+</div>
+```
+
+```css
+.ratio-16-9 {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+```
+
+---

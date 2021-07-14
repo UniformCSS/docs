@@ -187,7 +187,7 @@
   },
   {
     "name": "ratio",
-    "responsive": false,
+    "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
     "staticProperties": [],
@@ -195,7 +195,43 @@
     "utilities": [
       {
         "class": "ratio-square",
-        "properties": ["display"]
+        "properties": [
+          "position: relative;",
+          "width: 100%;",
+          "padding-top: 100%;"
+        ]
+      },
+      {
+        "class": "ratio-16-9",
+        "properties": [
+          "position: relative;",
+          "width: 100%;",
+          "padding-top: 56.25%;"
+        ]
+      },
+      {
+        "class": "ratio-4-3",
+        "properties": [
+          "position: relative;",
+          "width: 100%;",
+          "padding-top: 75%;"
+        ]
+      },
+      {
+        "class": "ratio-2-1",
+        "properties": [
+          "position: relative;",
+          "width: 100%;",
+          "padding-top: 50%;"
+        ]
+      },
+      {
+        "class": "ratio-16-10",
+        "properties": [
+          "position: relative;",
+          "width: 100%;",
+          "padding-top: 63%;"
+        ]
       }
     ]
   }

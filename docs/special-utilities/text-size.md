@@ -14,7 +14,7 @@ Unlike the `font-<size>` utility, the `text-<size>` applies both `font-size` and
 
 ## Basic Usage
 
-You can apply text sizing by applying the `text-<size>` utility. This utility is responsive and can also be applied conditionally based on breakpoint.
+You can apply text sizing by applying the `text-<size>` utility. This utility can also be applied conditionally based on breakpoint.
 
 ```html
 <h1 class="text-xl md.text-4xl">

@@ -31577,6 +31577,36 @@ select {
     float: none;
   }
 
+  .sm\.ratio-square {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  .sm\.ratio-16-9 {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+
+  .sm\.ratio-4-3 {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+  }
+
+  .sm\.ratio-2-1 {
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+  }
+
+  .sm\.ratio-16-10 {
+    position: relative;
+    width: 100%;
+    padding-top: 63%;
+  }
+
   .sm\.xy-0 {
     top: 0;
     right: 0;
@@ -40103,6 +40133,36 @@ select {
     float: none;
   }
 
+  .md\.ratio-square {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  .md\.ratio-16-9 {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+
+  .md\.ratio-4-3 {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+  }
+
+  .md\.ratio-2-1 {
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+  }
+
+  .md\.ratio-16-10 {
+    position: relative;
+    width: 100%;
+    padding-top: 63%;
+  }
+
   .md\.xy-0 {
     top: 0;
     right: 0;
@@ -48627,6 +48687,36 @@ select {
 
   .lg\.float-none {
     float: none;
+  }
+
+  .lg\.ratio-square {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  .lg\.ratio-16-9 {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+
+  .lg\.ratio-4-3 {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+  }
+
+  .lg\.ratio-2-1 {
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+  }
+
+  .lg\.ratio-16-10 {
+    position: relative;
+    width: 100%;
+    padding-top: 63%;
   }
 
   .lg\.xy-0 {

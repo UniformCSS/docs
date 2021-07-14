@@ -104,6 +104,8 @@ The following default keyframe configurations are applied.
 
 You can customize keyframes by passing in key value pairs to the `keyframes` setting in your configuration. After defining the name of your keyframe, the syntax for defining your animation is similar to the native method.
 
+**Please note**, after adding custom keyframes you must also add this to the `animation` utility to make the keyframe available as a variant.
+
 ```scss
 // main.scss
 
@@ -118,6 +120,13 @@ You can customize keyframes by passing in key value pairs to the `keyframes` set
           background-blue: blue
         )
       ),
+    ),
+    utilities: (
+      animation: (
+        variants: (
+          custom: custom-animation 1s linear infinite
+        )
+      )
     )
   )
 );
@@ -136,11 +145,24 @@ You can customize keyframes by passing in key value pairs to the `keyframes` set
 
 ## Disabling Defaults
 
-You can remove all defaults by passing `null` to the `keyframes` setting.
+If you wish to remove defaults, pass `null` to any theme property. Additionally, you can add your own by assigning theme settings to the `extend` map.
 
 ```scss
 @use "uniform" as * with (
   $config: (
     keyframes: null,
+
+    extend: (
+      keyframes: (
+        custom-animation: (
+          from: (
+            background-blue: red
+          ),
+          to: (
+            background-blue: blue
+          )
+        ),
+      )
+    )
   )
 )

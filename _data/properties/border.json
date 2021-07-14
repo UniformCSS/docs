@@ -4,7 +4,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["first"],
     "utilities": [
       {
@@ -50,7 +50,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["last"],
     "utilities": [
       {
@@ -96,7 +96,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["last"],
     "utilities": [
       {
@@ -126,7 +126,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -144,7 +144,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [
+    "staticProperties": [
       "--border-ltn: 50%",
       "--border-opacity: 1"
     ],
@@ -725,7 +725,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["first"],
     "utilities": [
       {
@@ -755,7 +755,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -801,7 +801,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["last"],
     "utilities": [
       {
@@ -831,7 +831,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -861,7 +861,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["first"],
     "utilities": [
       {
@@ -907,7 +907,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["last"],
     "utilities": [
       {
@@ -953,7 +953,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["first"],
     "utilities": [
       {
@@ -983,7 +983,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -1013,7 +1013,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["last"],
     "utilities": [
       {
@@ -1086,7 +1086,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["first"],
     "utilities": [
       {
@@ -1159,7 +1159,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["last"],
     "utilities": [
       {
@@ -1232,7 +1232,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": ["--border-opacity"],
+    "staticProperties": ["--border-opacity"],
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
@@ -1334,105 +1334,11 @@
     ]
   },
   {
-    "name": "border-lightness",
-    "responsive": false,
-    "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [],
-    "pseudos": ["hover", "group-hover", "focus", "dark"],
-    "utilities": [
-      {
-        "class": "border-white",
-        "properties": ["--border-ltn: var(--ltn-white);"]
-      },
-      {
-        "class": "border-50",
-        "properties": ["--border-ltn: var(--ltn-50);"]
-      },
-      {
-        "class": "border-100",
-        "properties": ["--border-ltn: var(--ltn-100);"]
-      },
-      {
-        "class": "border-150",
-        "properties": ["--border-ltn: var(--ltn-150);"]
-      },
-      {
-        "class": "border-200",
-        "properties": ["--border-ltn: var(--ltn-200);"]
-      },
-      {
-        "class": "border-250",
-        "properties": ["--border-ltn: var(--ltn-250);"]
-      },
-      {
-        "class": "border-300",
-        "properties": ["--border-ltn: var(--ltn-300);"]
-      },
-      {
-        "class": "border-350",
-        "properties": ["--border-ltn: var(--ltn-350);"]
-      },
-      {
-        "class": "border-400",
-        "properties": ["--border-ltn: var(--ltn-400);"]
-      },
-      {
-        "class": "border-450",
-        "properties": ["--border-ltn: var(--ltn-450);"]
-      },
-      {
-        "class": "border-500",
-        "properties": ["--border-ltn: var(--ltn-500);"]
-      },
-      {
-        "class": "border-550",
-        "properties": ["--border-ltn: var(--ltn-550);"]
-      },
-      {
-        "class": "border-600",
-        "properties": ["--border-ltn: var(--ltn-600);"]
-      },
-      {
-        "class": "border-650",
-        "properties": ["--border-ltn: var(--ltn-650);"]
-      },
-      {
-        "class": "border-700",
-        "properties": ["--border-ltn: var(--ltn-700);"]
-      },
-      {
-        "class": "border-750",
-        "properties": ["--border-ltn: var(--ltn-750);"]
-      },
-      {
-        "class": "border-800",
-        "properties": ["--border-ltn: var(--ltn-800);"]
-      },
-      {
-        "class": "border-850",
-        "properties": ["--border-ltn: var(--ltn-850);"]
-      },
-      {
-        "class": "border-900",
-        "properties": ["--border-ltn: var(--ltn-900);"]
-      },
-      {
-        "class": "border-950",
-        "properties": ["--border-ltn: var(--ltn-950);"]
-      },
-      {
-        "class": "border-black",
-        "properties": ["--border-ltn: var(--ltn-black);"]
-      }
-    ]
-  },
-  {
     "name": "border-top-radius",
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["first"],
     "utilities": [
       {
@@ -1505,7 +1411,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -1550,7 +1456,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {

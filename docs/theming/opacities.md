@@ -1,12 +1,14 @@
 ---
 title: Opacities
-description: Learn how to customize and manipulate colors.
+description: Learn how to customize opacity levels.
 date: 2021-01-02
 ---
 
-## Colors
+## Opacities
 
-There are two ways of customizing colors in Uniform; Sass and CSS variables. The native Sass configuration method provides the most flexibility, whereas the CSS variables method is the easiest to configure but comes with limitations.
+The `opacities` setting adds or removes variants from opacity related properties such as `background-opacity`, `border-opacity`, `color-opacity`.
+
+variants forThere are two ways of customizing colors in Uniform; Sass and CSS variables. The native Sass configuration method provides the most flexibility, whereas the CSS variables method is the easiest to configure but comes with limitations.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 

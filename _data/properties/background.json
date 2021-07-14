@@ -4,7 +4,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -26,7 +26,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -52,7 +52,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": ["--bg-ltn: 50%", "--bg-opacity: 1"],
+    "staticProperties": ["--bg-ltn: 50%", "--bg-opacity: 1"],
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
@@ -630,7 +630,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -672,7 +672,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -706,7 +706,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -728,7 +728,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": ["--gradient: initial"],
+    "staticProperties": ["--gradient: initial"],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -812,7 +812,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": ["--bg-opacity"],
+    "staticProperties": ["--bg-opacity"],
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
@@ -910,100 +910,6 @@
       {
         "class": "bg-opacity-100",
         "properties": ["--bg-opacity: 1;"]
-      }
-    ]
-  },
-  {
-    "name": "background-lightness",
-    "responsive": false,
-    "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [],
-    "pseudos": ["hover", "group-hover", "focus", "dark"],
-    "utilities": [
-      {
-        "class": "bg-white",
-        "properties": ["--bg-ltn: var(--ltn-white);"]
-      },
-      {
-        "class": "bg-50",
-        "properties": ["--bg-ltn: var(--ltn-50);"]
-      },
-      {
-        "class": "bg-100",
-        "properties": ["--bg-ltn: var(--ltn-100);"]
-      },
-      {
-        "class": "bg-150",
-        "properties": ["--bg-ltn: var(--ltn-150);"]
-      },
-      {
-        "class": "bg-200",
-        "properties": ["--bg-ltn: var(--ltn-200);"]
-      },
-      {
-        "class": "bg-250",
-        "properties": ["--bg-ltn: var(--ltn-250);"]
-      },
-      {
-        "class": "bg-300",
-        "properties": ["--bg-ltn: var(--ltn-300);"]
-      },
-      {
-        "class": "bg-350",
-        "properties": ["--bg-ltn: var(--ltn-350);"]
-      },
-      {
-        "class": "bg-400",
-        "properties": ["--bg-ltn: var(--ltn-400);"]
-      },
-      {
-        "class": "bg-450",
-        "properties": ["--bg-ltn: var(--ltn-450);"]
-      },
-      {
-        "class": "bg-500",
-        "properties": ["--bg-ltn: var(--ltn-500);"]
-      },
-      {
-        "class": "bg-550",
-        "properties": ["--bg-ltn: var(--ltn-550);"]
-      },
-      {
-        "class": "bg-600",
-        "properties": ["--bg-ltn: var(--ltn-600);"]
-      },
-      {
-        "class": "bg-650",
-        "properties": ["--bg-ltn: var(--ltn-650);"]
-      },
-      {
-        "class": "bg-700",
-        "properties": ["--bg-ltn: var(--ltn-700);"]
-      },
-      {
-        "class": "bg-750",
-        "properties": ["--bg-ltn: var(--ltn-750);"]
-      },
-      {
-        "class": "bg-800",
-        "properties": ["--bg-ltn: var(--ltn-800);"]
-      },
-      {
-        "class": "bg-850",
-        "properties": ["--bg-ltn: var(--ltn-850);"]
-      },
-      {
-        "class": "bg-900",
-        "properties": ["--bg-ltn: var(--ltn-900);"]
-      },
-      {
-        "class": "bg-950",
-        "properties": ["--bg-ltn: var(--ltn-950);"]
-      },
-      {
-        "class": "bg-black",
-        "properties": ["--bg-ltn: var(--ltn-black);"]
       }
     ]
   }

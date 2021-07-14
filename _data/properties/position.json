@@ -4,7 +4,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -146,7 +146,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -288,7 +288,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -430,7 +430,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -572,7 +572,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["focus"],
     "utilities": [
       {
@@ -630,7 +630,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -648,7 +648,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -676,7 +676,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {

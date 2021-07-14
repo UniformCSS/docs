@@ -4,7 +4,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -62,7 +62,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [
+    "staticProperties": [
       "--translate-x: 0",
       "--translate-y: 0",
       "--rotate: 0",
@@ -84,7 +84,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -122,7 +122,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -180,7 +180,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -238,7 +238,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -296,7 +296,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -358,7 +358,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -420,7 +420,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -686,7 +686,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {

@@ -4,7 +4,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {

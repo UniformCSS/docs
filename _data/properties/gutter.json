@@ -4,7 +4,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "> * + *",
-    "customProperties": [
+    "staticProperties": [
       "--gutter-top: 0",
       "--gutter-right: 1",
       "--gutter-bottom: 1",
@@ -23,7 +23,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "> * + *",
-    "customProperties": [
+    "staticProperties": [
       "--gutter-right: 0",
       "--gutter-left: 1"
     ],
@@ -136,7 +136,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "> * + *",
-    "customProperties": [
+    "staticProperties": [
       "--gutter-top: 1",
       "--gutter-bottom: 0"
     ],

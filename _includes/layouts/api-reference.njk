@@ -96,7 +96,7 @@ layout: layouts/base.njk
                         </td>
                         <td class="text-sm color-gray-700 align-top px-20 py-8">
                           <pre class="overflow-auto">
-                          {%- for item in key.customProperties -%}
+                          {%- for item in key.staticProperties -%}
                             <code class="opacity-50">{{ item }}</code><br>
                           {%- endfor -%}
                           {%- for item in utility.properties -%}

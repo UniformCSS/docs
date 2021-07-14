@@ -4,7 +4,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [
+    "staticProperties": [
       "--backdrop-blur: 0", 
       "--backdrop-grayscale: 0", 
       "--backdrop-saturate: 1",
@@ -23,7 +23,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "focus"],
     "utilities": [
       {
@@ -81,7 +81,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [
+    "staticProperties": [
       "--filter-blur: 0",
       "--filter-grayscale: 0",
       "--filter-saturate: 1",
@@ -100,7 +100,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["none"],
     "utilities": [
       {
@@ -174,7 +174,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -212,7 +212,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -230,7 +230,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -248,7 +248,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -302,7 +302,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -340,7 +340,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -358,7 +358,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -376,7 +376,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
+    "staticProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {

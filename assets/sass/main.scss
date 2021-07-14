@@ -30,6 +30,23 @@
 
 
 
+[type=text] {
+	&::placeholder {
+		@include apply('color-gray-600 transition-300');
+	}
+	&:hover {
+		&::placeholder {
+			@include apply('color-gray-800');
+		}
+	}
+	&:focus {
+		&::placeholder {
+			@include apply('color-gray-500');
+		}
+	}
+}
+
+
 .ring {
 	position: relative;
 	&:focus {

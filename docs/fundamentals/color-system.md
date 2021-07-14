@@ -225,7 +225,7 @@ Uniform also provides semantic colors to handle form states. The following seman
 | Color | Name { .w-160 } | Variable |
 | - | - | - |
 | { .bg-success } | `bg-success` | `green-50` | 
-| { .bg-green-300 } | `border-success` | `green-300` | 
+| { .bg-green-500 } | `border-success` | `green-500` | 
 | { .bg-green-800 } | `color-success` | `green-800` | 
 | { .bg-warning } | `bg-warning` | `yellow-50` | 
 | { .bg-yellow-300 } | `border-warning` | `yellow-300` |
@@ -241,7 +241,7 @@ Uniform also provides semantic colors to handle form states. The following seman
 
 ## Color Opacity
 
-All colors are initially configured in hexadecimal format e.g. `#ffffff`. However, during the build process, Uniform will convert each color to their rgba equivalent values. By doing so, you can take advantage of the `opacity` property by manipulating the alpha channel of each color. For more information, check out the opacities section in [Colors](/docs/colors/).
+All colors are initially configured in hexadecimal format e.g. `#ffffff`. However, during the build process, Uniform will convert each color to their rgba equivalent values. By doing so, you can take advantage of the `opacity` property by manipulating the alpha channel of each color. For more information, check out [Opacities](/docs/opacities/).
 
 | Color | Name { .w-160 } | Opacity |
 | - | - | - |

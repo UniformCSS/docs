@@ -128,6 +128,11 @@ select {
   }
 }
 
+// reset firefox placeholder opacity
+::-moz-placeholder {
+  opacity: 1;
+}
+
 // reset textarea style
 textarea {
   // move the label to the top

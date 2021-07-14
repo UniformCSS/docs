@@ -8,12 +8,10 @@ $responsive-pseudos: false;
 $extra-selector: '::placeholder';
 
 $properties: (color);
-$static-properties: (
-  --ph-opacity: 1,
-);
+$static-properties: ();
 
 $variants: (
-	transparent: transparent,
+  transparent: transparent,
   current: currentColor
 );
 

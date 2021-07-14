@@ -40,7 +40,9 @@ MARKDOWN PLUGIN
 
 --markdown-p-margin
 --markdown-p-weight
---markdown-p-size
+--markdown-p-font-size
+--markdown-p-weight
+--markdown-p-leading
 --markdown-p-color
 
 --markdown-hr-margin
@@ -202,10 +204,10 @@ CODE
 .markdown > ol li code,
 .markdown > ul li code,
 .markdown > table td code {
-	padding: var(--markdown-code-padding, 0);
+	padding: var(--markdown-code-padding, size(4, 6));
 	font-size: var(--markdown-code-font-size, font(sm));
-	border-radius: var(--markdown-code-radius, 0);
-	background: var(--markdown-code-bg, transparent);
+	border-radius: var(--markdown-code-radius, radius(sm));
+	background: var(--markdown-code-bg, fill(cyan-50));
 	border: var(--markdown-code-border, 0);
 	color: var(--markdown-code-color, fill(cyan-500));
 	white-space: nowrap;

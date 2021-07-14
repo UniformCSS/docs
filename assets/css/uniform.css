@@ -52494,7 +52494,9 @@ MARKDOWN PLUGIN
 
 --markdown-p-margin
 --markdown-p-weight
---markdown-p-size
+--markdown-p-font-size
+--markdown-p-weight
+--markdown-p-leading
 --markdown-p-color
 
 --markdown-hr-margin
@@ -52662,10 +52664,10 @@ CODE
 .markdown > ol li code,
 .markdown > ul li code,
 .markdown > table td code {
-  padding: var(--markdown-code-padding, 0);
+  padding: var(--markdown-code-padding, 0.25rem 0.375rem);
   font-size: var(--markdown-code-font-size, var(--font-sm));
-  border-radius: var(--markdown-code-radius, 0);
-  background: var(--markdown-code-bg, transparent);
+  border-radius: var(--markdown-code-radius, var(--radius-sm));
+  background: var(--markdown-code-bg, rgba(var(--cyan-50), 1));
   border: var(--markdown-code-border, 0);
   color: var(--markdown-code-color, rgba(var(--cyan-500), 1));
   white-space: nowrap;

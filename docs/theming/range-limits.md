@@ -38,7 +38,7 @@ The following default range limit configurations are applied for each property t
       translate: (1, 32)
     ),
   )
-)
+);
 ```
 
 ---
@@ -58,7 +58,7 @@ You can customize range limit by passing in key value pairs to the `range-limits
       padding: (1, 3)
     ),
   )
-)
+);
 ```
 
 ```css

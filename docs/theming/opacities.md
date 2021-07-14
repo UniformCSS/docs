@@ -6,45 +6,61 @@ date: 2021-01-02
 
 ## Opacities
 
-The `opacities` setting controls the levels for opacity related properties such as `background-opacity`, `border-opacity`, `color-opacity`.
+The `opacities` setting controls the levels for opacity related properties such as `opacity`, `background-opacity`, `border-opacity`, `color-opacity`.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
 ---
 
-## Default Radiuses
+## Default Opacities
 
-The following default radius configurations are applied. To see a visual reference of all available radiuses, visit [Cheatsheet](/cheatsheet/border-radiuses).
+The following default opacities configurations are applied. To see a visual reference of each opacity, visit [Cheatsheet](/cheatsheet/opacities).
 
 ```scss
 @use "uniform" as * with (
   $config: (
-    radiuses: (
-      2xs: rem(3),
-      xs: rem(4),
-      sm: rem(6),
-      md: rem(8),
-      lg: rem(12),
-      xl: rem(16),
-      2xl: rem(24)
-    )
+    opacities: (
+      0: 0,
+      2: 0.02,
+      4: 0.04,
+      6: 0.06,
+      8: 0.08,
+      10: 0.1,
+      15: 0.15,
+      20: 0.2,
+      25: 0.25,
+      30: 0.3,
+      35: 0.35,
+      40: 0.4,
+      45: 0.45,
+      50: 0.5,
+      55: 0.55,
+      60: 0.6,
+      65: 0.65,
+      70: 0.7,
+      75: 0.75,
+      80: 0.8,
+      85: 0.85,
+      90: 0.9,
+      95: 0.95,
+      100: 1,
+    ),
   )
-)
+);
 ```
 
 ---
 
 ## Customizing via Sass
 
-To customize radiuses, pass in key value pairs to the `radiuses` map in your configuration. Customizations applied to the `radiuses` setting will be universally applied across all border radius related properties such as `border-radius`, `border-top-right-radius` etc.
+To customize opacities, pass in key value pairs to the `opacities` map in your configuration. Customizations will be universally applied across all opacity related properties.
 
 ```scss
 // main.scss
 @use "uniform" as * with (
   $config: (
-    radiuses: (
-      custom: 5px,
-      card: 7px,
+    opacities: (
+      opaque: 0.78
     ),
   )
 );
@@ -52,31 +68,19 @@ To customize radiuses, pass in key value pairs to the `radiuses` map in your con
 
 ```css
 /* main.css */
-.radius-custom {
-  border-radius: 5px;
+.opacity-opaque {
+  opacity-opaque: 0.78;
 }
-.radius-card {
-  border-radius: 7px;
+.bg-opacity-opaque {
+  --bg-opacity: 0.78;
+}
+.color-opacity-opaque {
+  --color-opacity: 0.78;
+}
+.border-opacity-opaque {
+  --border-opacity: 0.78;
 }
 ...
-```
-
----
-
-## Customizing via CDN
-
-If you are using the precompiled version of Uniform, you can customize theme properties by overriding predefined CSS variables. 
-
-```css
-:root {
-  --radius-2xs: 0.1875rem;
-  --radius-xs: 0.25rem;
-  --radius-sm: 0.375rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
-  --radius-2xl: 1.5rem;
-}
 ```
 
 ---
@@ -88,10 +92,12 @@ If you wish to remove defaults, pass `null` to any theme property. Additionally,
 ```scss
 @use "uniform" as * with (
   $config: (
-    radiuses: null,
+    opacities: null,
 
     extend: (
-      card: 8px
+      opacities: (
+        opaque: 0.78
+      )
     )
   )
 )

@@ -26,7 +26,7 @@ By default, there are **3 breakpoints**. The following default breakpoint config
       lg: 1280px
     ),
   )
-)
+);
 ```
 
 ---

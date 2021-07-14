@@ -158,7 +158,7 @@ The following default colors are applied. To see a more visual reference of all 
       pink-950: #260013
     )
   )
-)
+);
 ```
 
 :::
@@ -178,7 +178,7 @@ To customize colors, pass in key value pairs to the `colors` setting in your con
       primary: #0054CB
     )
   )
-)
+);
 ```
 
 ```css
@@ -224,7 +224,7 @@ If you wish to remove defaults, pass `null` to any theme property. Additionally,
       )
     )
   )
-)
+);
 ```
 
 ---

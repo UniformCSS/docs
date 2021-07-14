@@ -71,7 +71,7 @@ The following default keyframe configurations are applied.
       )
     )
   )
-)
+);
 ```
 
 ```css
@@ -120,7 +120,7 @@ You can customize keyframes by passing in key value pairs to the `keyframes` set
       ),
     )
   )
-)
+);
 ```
 
 ```css

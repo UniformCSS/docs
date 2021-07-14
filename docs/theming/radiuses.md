@@ -29,14 +29,14 @@ The following default radius configurations are applied. To see a visual referen
       2xl: rem(24)
     )
   )
-)
+);
 ```
 
 ---
 
 ## Customizing via Sass
 
-To customize radiuses, pass in key value pairs to the `radiuses` map in your configuration. Customizations applied to the `radiuses` setting will be universally applied across all border radius related properties such as `border-radius`, `border-top-right-radius` etc.
+To customize radiuses, pass in key value pairs to the `radiuses` map in your configuration. Customizations will be universally applied across all border radius related properties.
 
 ```scss
 // main.scss
@@ -91,7 +91,9 @@ If you wish to remove defaults, pass `null` to any theme property. Additionally,
     radiuses: null,
 
     extend: (
-      card: 8px
+      radiuses: (
+        card: 8px
+      )
     )
   )
 )

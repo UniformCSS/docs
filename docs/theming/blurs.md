@@ -29,7 +29,7 @@ The following default blur configurations are applied. To see a more visual refe
       2xl: 48px,
     )
   )
-)
+);
 ```
 
 ---

@@ -53,7 +53,7 @@ The following default gradients are applied. To see a more visual reference of a
       gradient-y-to-black: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%),
     )
   )
-)
+);
 ```
 
 ---
@@ -71,7 +71,7 @@ You can add your own gradients by passing in key value pairs to the `gradients` 
       custom-gradient: linear-gradient(to right, red 0%, blue 100%)
     )
   )
-)
+);
 ```
 
 ```css
@@ -110,7 +110,7 @@ If you wish to remove defaults, pass `null` to any theme property. Additionally,
     gradients: null,
     
     extend: (
-      gradient: (
+      gradients: (
         custom: linear-gradient(to right, #40C6FF 0%, #505BED 100%)
       )
     )

@@ -59,7 +59,7 @@ The following default shadow configurations are applied. To see a more visual re
       )
     )
   )
-)
+);
 ```
 
 ---

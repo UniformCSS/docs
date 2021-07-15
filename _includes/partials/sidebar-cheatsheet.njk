@@ -1,35 +1,5 @@
-<div class="sm.hidden mt-20 bg-white">
-  <select class="js-select-url-switcher w-100p radius-md bg-gray-50" onchange="selectURL(this)">
-    <optgroup label="Typography">
-      {%- for post in collections.typography -%}
-        <option value="{{ post.url }}" {% if post.url == page.url %}selected{% endif %}>{{ post.data.title }}</option>
-      {%- endfor -%}
-    </optgroup>
-    <optgroup label="Color">
-      {%- for post in collections.color -%}
-        <option value="{{ post.url }}" {% if post.url == page.url %}selected{% endif %}>{{ post.data.title }}</option>
-      {%- endfor -%}
-    </optgroup>
-    <optgroup label="Radius">
-      {%- for post in collections.radius -%}
-        <option value="{{ post.url }}" {% if post.url == page.url %}selected{% endif %}>{{ post.data.title }}</option>
-      {%- endfor -%}
-    </optgroup>
-    <optgroup label="Effect">
-      {%- for post in collections.effect -%}
-        <option value="{{ post.url }}" {% if post.url == page.url %}selected{% endif %}>{{ post.data.title }}</option>
-      {%- endfor -%}
-    </optgroup>
-    <optgroup label="Sizing">
-      {%- for post in collections.sizing -%}
-        <option value="{{ post.url }}" {% if post.url == page.url %}selected{% endif %}>{{ post.data.title }}</option>
-      {%- endfor -%}
-    </optgroup>
-  </select>
-</div>
-
-<div class="hidden sm.block top-72 sticky h-100vh overflow-auto pl-20 pr-40 pt-48 pb-192 ml-n20 gutter-y-40">
-  <div>
+<ul class="gutter-y-40">
+  <li>
     <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
       Typography
     </h6>
@@ -38,9 +8,8 @@
         <a href="{{ post.url }}" class="font-sm medium transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-14 ml-n14 bg-gray-100 color-black radius-md{% else %} color-gray-600 hover.color-gray-900 hover.translate-x-6{% endif %} py-12">{{ post.data.title }}</a>
       {%- endfor -%}
     </nav>
-  </div>
-
-  <div>
+  </li>
+  <li>
     <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
       Color
     </h6>
@@ -49,9 +18,8 @@
         <a href="{{ post.url }}" class="font-sm medium transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-14 ml-n14 bg-gray-100 color-black radius-md{% else %} color-gray-600 hover.color-gray-900 hover.translate-x-6{% endif %} py-12">{{ post.data.title }}</a>
       {%- endfor -%}
     </nav>
-  </div>
-
-  <div>
+  </li>
+  <li>
     <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
       Radius
     </h6>
@@ -60,9 +28,8 @@
         <a href="{{ post.url }}" class="font-sm medium transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-14 ml-n14 bg-gray-100 color-black radius-md{% else %} color-gray-600 hover.color-gray-900 hover.translate-x-6{% endif %} py-12">{{ post.data.title }}</a>
       {%- endfor -%}
     </nav>
-  </div>
-
-  <div>
+  </li>
+  <li>
     <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
       Effect
     </h6>
@@ -71,9 +38,8 @@
         <a href="{{ post.url }}" class="font-sm medium transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-14 ml-n14 bg-gray-100 color-black radius-md{% else %} color-gray-600 hover.color-gray-900 hover.translate-x-6{% endif %} py-12">{{ post.data.title }}</a>
       {%- endfor -%}
     </nav>
-  </div>
-
-  <div>
+  </li>
+  <li>
     <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
       Sizing
     </h6>
@@ -82,5 +48,5 @@
         <a href="{{ post.url }}" class="font-sm medium transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-14 ml-n14 bg-gray-100 color-black radius-md{% else %} color-gray-600 hover.color-gray-900 hover.translate-x-6{% endif %} py-12">{{ post.data.title }}</a>
       {%- endfor -%}
     </nav>
-  </div>
-</div>
+  </li>
+</ul>

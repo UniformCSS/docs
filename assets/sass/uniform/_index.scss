@@ -272,7 +272,17 @@ $responsive-pseudo-set: ();
 
 	// Map generation
 	@each $utility, $utility-value in $utilities {
-		@if (list.index($excludes, all) == null and list.index($excludes, $utility) == null) {
+		$include-condition: true;
+		@if list.index($excludes, all) {
+			$include-condition: false;
+		}
+		@if list.index($excludes, $utility) {
+			$include-condition: false;
+		}
+		@if list.index($includes, $utility) {
+			$include-condition: true;
+		}
+		@if ($include-condition) {
 
 			// Setup initial variables
 			$shorthand: map.get($utility-value, shorthand);

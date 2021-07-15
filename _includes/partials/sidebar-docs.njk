@@ -1,54 +1,86 @@
-<div class="mb-48 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Introduction
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for post in collections.introduction -%}
-      <a href="{{ post.url }}" class="font-sm medium transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-14 ml-n14 bg-gray-100 color-black radius-md{% else %} color-gray-600 hover.color-gray-900 hover.translate-x-6{% endif %} py-12">{{ post.data.title }}</a>
-    {%- endfor -%}
-  </nav>
+<div class="sm.hidden mt-20 bg-white">
+  <select class="js-select-url-switcher w-100p radius-md bg-gray-50" onchange="selectURL(this)">
+    <optgroup label="Introduction">
+      {%- for post in collections.introduction -%}
+        <option value="{{ post.url }}" {% if post.url == page.url %}selected{% endif %}>{{ post.data.title }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Fundamentals">
+      {%- for post in collections.fundamentals -%}
+        <option value="{{ post.url }}" {% if post.url == page.url %}selected{% endif %}>{{ post.data.title }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Customization">
+      {%- for post in collections.customization -%}
+        <option value="{{ post.url }}" {% if post.url == page.url %}selected{% endif %}>{{ post.data.title }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Theming">
+      {%- for post in collections.theming -%}
+        <option value="{{ post.url }}" {% if post.url == page.url %}selected{% endif %}>{{ post.data.title }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Special Utilities">
+      {%- for post in collections.specialUtilities -%}
+        <option value="{{ post.url }}" {% if post.url == page.url %}selected{% endif %}>{{ post.data.title }}</option>
+      {%- endfor -%}
+    </optgroup>
+  </select>
 </div>
 
-<div class="mb-48 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Fundamentals
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for post in collections.fundamentals -%}
-      <a href="{{ post.url }}" class="font-sm medium transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-14 ml-n14 bg-gray-100 color-black radius-md{% else %} color-gray-600 hover.color-gray-900 hover.translate-x-6{% endif %} py-12">{{ post.data.title }}</a>
-    {%- endfor -%}
-  </nav>
-</div>
+<div class="hidden sm.block top-72 sticky h-100vh overflow-auto pl-20 pr-40 pt-48 pb-192 ml-n20 gutter-y-40">
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Introduction
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for post in collections.introduction -%}
+        <a href="{{ post.url }}" class="font-sm medium transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-14 ml-n14 bg-gray-100 color-black radius-md{% else %} color-gray-600 hover.color-gray-900 hover.translate-x-6{% endif %} py-12">{{ post.data.title }}</a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-48 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Customization
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for post in collections.customization -%}
-      <a href="{{ post.url }}" class="font-sm medium transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-14 ml-n14 bg-gray-100 color-black radius-md{% else %} color-gray-600 hover.color-gray-900 hover.translate-x-6{% endif %} py-12">{{ post.data.title }}</a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Fundamentals
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for post in collections.fundamentals -%}
+        <a href="{{ post.url }}" class="font-sm medium transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-14 ml-n14 bg-gray-100 color-black radius-md{% else %} color-gray-600 hover.color-gray-900 hover.translate-x-6{% endif %} py-12">{{ post.data.title }}</a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-48 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Theming
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for post in collections.theming -%}
-      <a href="{{ post.url }}" class="font-sm medium transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-14 ml-n14 bg-gray-100 color-black radius-md{% else %} color-gray-600 hover.color-gray-900 hover.translate-x-6{% endif %} py-12">{{ post.data.title }}</a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Customization
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for post in collections.customization -%}
+        <a href="{{ post.url }}" class="font-sm medium transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-14 ml-n14 bg-gray-100 color-black radius-md{% else %} color-gray-600 hover.color-gray-900 hover.translate-x-6{% endif %} py-12">{{ post.data.title }}</a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-48 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Special Utilities
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for post in collections.specialUtilities -%}
-      <a href="{{ post.url }}" class="font-sm medium transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-14 ml-n14 bg-gray-100 color-black radius-md{% else %} color-gray-600 hover.color-gray-900 hover.translate-x-6{% endif %} py-12">{{ post.data.title }}</a>
-    {%- endfor -%}
-  </nav>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Theming
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for post in collections.theming -%}
+        <a href="{{ post.url }}" class="font-sm medium transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-14 ml-n14 bg-gray-100 color-black radius-md{% else %} color-gray-600 hover.color-gray-900 hover.translate-x-6{% endif %} py-12">{{ post.data.title }}</a>
+      {%- endfor -%}
+    </nav>
+  </div>
+
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Special Utilities
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for post in collections.specialUtilities -%}
+        <a href="{{ post.url }}" class="font-sm medium transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-14 ml-n14 bg-gray-100 color-black radius-md{% else %} color-gray-600 hover.color-gray-900 hover.translate-x-6{% endif %} py-12">{{ post.data.title }}</a>
+      {%- endfor -%}
+    </nav>
+  </div>
 </div>

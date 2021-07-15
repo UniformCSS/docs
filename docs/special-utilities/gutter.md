@@ -68,7 +68,7 @@ You can reverse direction of the `margin` that is applied by assigning the `gutt
 
 ## Disabling Gutter
 
-To disable this special utility, simply pass in the `gutter` properties to the `excludes` setting in your Uniform configuration.
+To disable this special utility, simply pass in the `gutter` properties to the `excludes` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (

@@ -366,24 +366,31 @@ config_helpers_output: |
 
       <div class="w-100p max-w-448 group">
         <div class="relative text-sm leading-100">
-          <div class="font-lg absolute z-2 top-0 w-40 h-40 flex align-items-center justify-content-center color-black color-opacity-50 group-hover.color-opacity-100 transition-100">
-            <ion-icon name="search-outline"></ion-icon>
+          <div class="absolute z-2 top-0 left-0 w-40 h-40 flex align-items-center justify-content-center color-gray-700 font-md">
+            {% set iconClass = 'w-16 h-16' %}
+            {% include "icons/search.njk" %}
           </div>
 
-          <input type="text" placeholder="Stay hydrated" class="w-100p h-40 pr-32 text-sm text-center radius-lg bg-gray-500 bg-opacity-15 focus.bg-opacity-20 color-gray-600 focus.color-gray-600 transition-100 js-docsearch">
+          <input type="text" placeholder="Stay hydrated" class="w-100p h-40 pl-40 pr-48 text-sm radius-lg bg-gray-50 focus.bg-gray-100 color-gray-800 js-docsearch">
+
+          <div class="absolute z-2 top-0 right-0 w-48 h-40 flex align-items-center justify-content-center color-gray-500 font-sm medium">
+            ⌘K
+          </div>
         </div>
       </div>
 
-      <div class="w-256 text-right">
-        
-        <a href="https://github.com/UniformCSS/UniformCSS" class="ml-10 first.ml-0 text-2xl hover.color-blue-400 transition-100">
-          <ion-icon name="logo-github"></ion-icon>
+      <div class="w-256 flex justify-content-end gutter-x-16">
+        <a href="https://github.com/ThinkUniform/uniformcss" class="flex align-items-center hover.color-blue-400 transition-100">
+          {% set iconClass = 'w-24 h-24' %}
+          {% include "icons/logo-github.njk" %}
         </a>
-        <a href="https://twitter.com/uniformcss" class="ml-10 first.ml-0 text-2xl hover.color-blue-400 transition-100">
-          <ion-icon name="logo-twitter"></ion-icon>
+        <a href="https://twitter.com/uniformcss" class="flex align-items-center hover.color-blue-400 transition-100">
+          {% set iconClass = 'w-24 h-24' %}
+          {% include "icons/logo-twitter.njk" %}
         </a>
-        <a href="https://github.com/UniformCSS/UniformCSS" class="ml-10 first.ml-0 text-2xl hover.color-blue-400 transition-100">
-          <ion-icon name="logo-youtube"></ion-icon>
+        <a href="https://github.com/ThinkUniform/uniformcss" class="flex align-items-center hover.color-blue-400 transition-100">
+          {% set iconClass = 'w-24 h-24' %}
+          {% include "icons/logo-youtube.njk" %}
         </a>
       </div>
       

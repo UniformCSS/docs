@@ -29,7 +29,7 @@ If you have <a class="hover.underline" href="https://nodejs.org/en/"  target="_b
 npm install uniformcss
 
 # or Clone project
-git clone https://github.com/UniformCSS/UniformCSS
+git clone https://github.com/ThinkUniform/uniformcss
 ```
 
 ### 2. Include Uniform in your Sass project

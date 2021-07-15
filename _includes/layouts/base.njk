@@ -49,9 +49,27 @@
 {{ content | safe }}
 
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js"></script>
-<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
+
+function selectURL(selectObject) {
+  var value = selectObject.value;  
+  window.location=value;
+}
+
+function searchShortcut(e) {
+  var selection = document.querySelector('.js-docsearch') !== null;
+  var selection = document.querySelector('.js-docsearch');
+  var evtobj = window.event? event : e;
+  if (evtobj.keyCode == 75 && evtobj.metaKey) {
+    selection.focus();
+  };
+}
+
+document.onkeydown = searchShortcut;
+
 function tabs() {                  
   return {
     width: 0,

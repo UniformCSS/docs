@@ -1,298 +1,397 @@
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Alignment
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.alignment -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
+<div class="sm.hidden mt-20 bg-white">
+  <select class="js-select-url-switcher w-100p radius-md bg-gray-50" onchange="selectURL(this)">
+    <optgroup label="Alignment">
+      {%- for property in properties.alignment -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Animation">
+      {%- for property in properties.animation -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Appearance">
+      {%- for property in properties.appearance -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Background">
+      {%- for property in properties.background -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Border">
+      {%- for property in properties.border -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Composition">
+      {%- for property in properties.composition -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Effect">
+      {%- for property in properties.effect -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Flexbox">
+      {%- for property in properties.flexbox -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Gap">
+      {%- for property in properties.gap -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Grid">
+      {%- for property in properties.grid -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Gutter">
+      {%- for property in properties.gutter -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Interactive">
+      {%- for property in properties.interactive -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Margin">
+      {%- for property in properties.margin -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Padding">
+      {%- for property in properties.padding -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Placeholder">
+      {%- for property in properties.placeholder -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Position">
+      {%- for property in properties.position -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Scroll">
+      {%- for property in properties.scroll -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Sizing">
+      {%- for property in properties.sizing -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Transform">
+      {%- for property in properties.transform -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Transition">
+      {%- for property in properties.transition -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+    <optgroup label="Typography">
+      {%- for property in properties.typography -%}
+        <option value="#{{ property.name | slug }}" {% if post.url == page.url %}selected{% endif %}>{{ property.name }}</option>
+      {%- endfor -%}
+    </optgroup>
+  </select>
 </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Animation
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.animation -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+<div class="hidden sm.block top-72 sticky h-100vh overflow-auto pl-20 pr-40 pt-48 pb-192 ml-n20 gutter-y-40">
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Alignment
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.alignment -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Appearance
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.appearance -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Animation
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.animation -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Background
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.background -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Appearance
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.appearance -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Border
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.border -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Background
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.background -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Composition
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.composition -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Border
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.border -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Effect
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.effect -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Composition
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.composition -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Flexbox
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.flexbox -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Effect
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.effect -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Gap
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.gap -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Flexbox
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.flexbox -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Grid
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.grid -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Gap
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.gap -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Gutter
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.gutter -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Grid
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.grid -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Interactive
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.interactive -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Gutter
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.gutter -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Margin
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.margin -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Interactive
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.interactive -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Padding
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.padding -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Margin
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.margin -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Placeholder
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.placeholder -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Padding
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.padding -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Position
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.position -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Placeholder
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.placeholder -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Scroll
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.scroll -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Position
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.position -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Sizing
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.sizing -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Scroll
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.scroll -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Split
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.split -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Sizing
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.sizing -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    SVG
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.svg -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      SVG
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.svg -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Transform
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.transform -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Transform
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.transform -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Transition
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.transition -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
-</div>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Transition
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.transition -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 
-<div class="mb-40 last.mb-0">
-  <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
-    Typography
-  </h6>
-  <nav class="flex flex-col align-items-start">
-    {%- for property in properties.typography -%}
-      <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
-        {{ property.name }}
-      </a>
-    {%- endfor -%}
-  </nav>
+  <div>
+    <h6 class="text-xs uppercase tracking-looser color-gray-400 semibold mb-16">
+      Typography
+    </h6>
+    <nav class="flex flex-col align-items-start">
+      {%- for property in properties.typography -%}
+        <a href="#{{ property.name | slug }}" class="font-sm medium transition-200 transform translate-x-0 color-gray-600 hover.color-gray-900 hover.translate-x-6 py-12">
+          {{ property.name }}
+        </a>
+      {%- endfor -%}
+    </nav>
+  </div>
 </div>

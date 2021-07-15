@@ -51,11 +51,11 @@ Use the following table for `box-shadow` class reference.
 | `shadow-lg` | `0 6px 12px rgba(var(--gray-500), 0.3)` {.align-top } |
 | `shadow-xl` | `0 12px 24px rgba(var(--gray-500), 0.35)` {.align-top } |
 | `shadow-2xl` | `0 24px 48px rgba(var(--gray-500), 0.4)` {.align-top } |
-| `shadow-focus` | `0 0 0 4px hsla(220, 75%, 50%, 20%)` {.align-top } |
-| `shadow-success` | `0 0 0 4px hsla(80, 75%, 50%, 20%)` {.align-top } |
-| `shadow-warning` | `0 0 0 4px hsla(40, 75%, 50%, 20%)` {.align-top } |
-| `shadow-danger` | `0 0 0 4px hsla(0, 75%, 50%, 20%)` {.align-top } |
-| `shadow-info` | `0 0 0 4px hsla(0, 75%, 50%, 20%)` {.align-top } |
+| `shadow-focus` | `0 0 0 4px rgba(var(--blue-500), 0.2)` {.align-top } |
+| `shadow-success` | `0 0 0 4px rgba(var(--green-500), 0.2)` {.align-top } |
+| `shadow-warning` | `0 0 0 4px rgba(var(--yellow-500), 0.2)` {.align-top } |
+| `shadow-danger` | `0 0 0 4px rgba(var(--red-500), 0.2)` {.align-top } |
+| `shadow-info` | `0 0 0 4px rgba(var(--teal-500), 0.2)` {.align-top } |
 
 { .text-left style="--markdown-table-cell-padding: 0.75em;" }
 

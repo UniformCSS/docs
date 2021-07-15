@@ -53306,20 +53306,6 @@ pre[class*=language-] {
   display: none !important;
 }
 
-[type=text]::placeholder {
-  --color-opacity: 1;
-  color: rgba(var(--gray-600), var(--color-opacity));
-  transition: background-color 300ms, border-color 300ms, color 300ms, fill 300ms, stroke 300ms, opacity 300ms, box-shadow 300ms, transform 300ms, top 300ms, right 300ms, bottom 300ms, left 300ms;
-}
-[type=text]:hover::placeholder {
-  --color-opacity: 1;
-  color: rgba(var(--gray-800), var(--color-opacity));
-}
-[type=text]:focus::placeholder {
-  --color-opacity: 1;
-  color: rgba(var(--gray-500), var(--color-opacity));
-}
-
 .ring {
   position: relative;
 }

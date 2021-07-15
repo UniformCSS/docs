@@ -61,57 +61,24 @@ To apply `ratio`, assign the class `ratio-<aspect-ratio>` to any element.
 </div>
 
 ```html
-<div class="gutter-x-20">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-</div>
-```
-
-```css
-.gutter-x-20 > * + * {
-  --gutter-right: 0;
-  --gutter-left: 1;
-  margin: 0 calc(1.25rem * var(--gutter-right)) 0 calc(1.25rem * var(--gutter-left));
-}
+<div class="ratio-square">...</div>
+<div class="ratio-16-9">...</div>
+<div class="ratio-4-3">...</div>
+<div class="ratio-2-1">...</div>
+<div class="ratio-16-10">...</div>
 ```
 
 ---
 
-## Gutter Reverse
+## Disabling Ratio
 
-You can reverse direction of the `margin` that is applied by assigning the `gutter-reverse` utility, this can be useful in situations where `flex-row-reverse` or `flex-col-reverse` is applied.
-
-<div class="flex flex-row-reverse radius-md bg-gray-50 p-20 gutter-x-20 gutter-reverse mb-20">
-  <div class="flex align-items-center justify-content-center w-40 h-40 radius-sm bg-gray-500 color-white">1</div>
-  <div class="flex align-items-center justify-content-center w-40 h-40 radius-sm bg-gray-500 color-white">2</div>
-  <div class="flex align-items-center justify-content-center w-40 h-40 radius-sm bg-gray-500 color-white">3</div>
-  <div class="flex align-items-center justify-content-center w-40 h-40 radius-sm bg-gray-500 color-white">4</div>
-</div>
-
-```html
-<div class="flex flex-row-reverse gutter-x-20 gutter-reverse">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-</div>
-```
-
----
-
-## Disabling Gutter
-
-To disable this special utility, simply pass in the `gutter` properties to the `excludes` setting in your Uniform configuration.
+To disable this special utility, simply pass in `ratio`to the `excludes` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
   $config: (
     excludes: (
-      gutter-x,
-      gutter-y,
-      gutter-reverse,     
+      ratio   
     )
   )
 );

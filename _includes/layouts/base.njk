@@ -65,9 +65,8 @@ function searchShortcut(e) {
 
 document.onkeydown = searchShortcut;
 
-
 document.addEventListener('alpine:init', () => {
-  Alpine.data('dropdown', () => ({
+  Alpine.data('tabs', () => ({
     width: 0,
     left: 0,
     tab: 0,
@@ -84,34 +83,6 @@ document.addEventListener('alpine:init', () => {
     }
   }))
 })
-
-
-
-{# function tabs() {                  
-  return {
-    width: 0,
-    left: 0,
-    tab: 0,
-
-    activeUI: 0, 
-    activeAPI: 0,
-    activeConfig: 0,
-    activeFeature: 0,
-
-    trackerColor: 'blue',
-
-    init: function() {
-      active = this.$el.querySelector('.is-active');
-      this.width =  active.offsetWidth;
-      this.left =  active.offsetLeft;
-    },
-    switcher(e, targetTab) {
-      this.tab = targetTab,
-      this.width = e.currentTarget.offsetWidth;
-      this.left =  e.currentTarget.offsetLeft;
-    }
-  }
-} #}
 
 docsearch({
   apiKey: '041931dc20e82036bcc5ef4b413bbfdb',

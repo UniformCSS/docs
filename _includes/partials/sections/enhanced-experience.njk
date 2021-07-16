@@ -1,6 +1,6 @@
 <section 
   class="hidden md.block mb-160 md.px-32" 
-  x-data="tabs()"
+  x-data="tabs"
 >
 
   <div 
@@ -51,7 +51,7 @@
               </div>
 
               <div class="pt-48">
-                <div class="grid grid-cols-10 px-16 py-18 radius-lg bg-black color-white bold text-xs">
+                <div class="grid grid-cols-10 px-16 py-20 radius-lg bg-black color-white bold text-xs">
                   <button 
                     class="flex align-items-center group justify-content-center"
                     @click.prevent="trackerColor = 'blue'"
@@ -274,7 +274,12 @@
 
 
 
-<section class="block md.hidden mb-96 last.mb-0" x-data="tabs()">
+<section 
+  class="block md.hidden mb-96 last.mb-0" 
+  x-data="{
+    trackerColor: 'blue'
+  }"
+>
   <div class="px-32 sm.text-center mb-64">
     <h3 class="font-8xl leading-100 extrabold tracking-tight mb-24">
       <span class="color-blue-400">Flexible colors</span> <br>for every need
@@ -416,7 +421,7 @@
 
 
 
-<section class="block md.hidden mb-96 last.mb-0" x-data="tabs()">
+<section class="block md.hidden mb-96 last.mb-0">
   <div class="px-32 sm.text-center mb-64">
     <h3 class="font-8xl leading-100 extrabold tracking-tight mb-24">
       <span class="color-blue-400">Built-in buttery</span> <br>smooth animations

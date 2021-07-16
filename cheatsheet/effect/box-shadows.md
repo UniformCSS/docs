@@ -44,7 +44,7 @@ Use the following table for `box-shadow` class reference.
 
 | Class | Value |
 | - | - |
-| `shadow-2xs` | `0 1px 2px 0 rgba(var(--gray-500), 0.1)` {.align-top } |
+| `shadow-2xs` | `0 1px 2px rgba(var(--gray-500), 0.1)` {.align-top } |
 | `shadow-xs` | `0 2px 4px rgba(var(--gray-500), 0.15)` {.align-top } |
 | `shadow-sm` | `0 3px 6px rgba(var(--gray-500), 0.2)` {.align-top } |
 | `shadow-md` | `0 4px 8px rgba(var(--gray-500), 0.25)` {.align-top } |
@@ -79,7 +79,7 @@ Customize radiuses by overriding the following CSS custom properties.
 
 ```css
 :root {
-  --shadow-2xs: 0 1px 2px 0 rgba(var(--gray-500), 0.1);
+  --shadow-2xs: 0 1px 2px rgba(var(--gray-500), 0.1);
   --shadow-xs: 0 2px 4px rgba(var(--gray-500), 0.15);
   --shadow-sm: 0 3px 6px rgba(var(--gray-500), 0.2);
   --shadow-md: 0 4px 8px rgba(var(--gray-500), 0.25);

@@ -70,15 +70,15 @@ layout: layouts/base.njk
 
               
               
-              <div class="max-h-320 overflow-auto border-1 border-gray-200">
+              <div class="max-h-320 overflow-auto">
                 <table class="w-100p">
                   <tbody>
                     {%- for utility in key.utilities -%}
-                      <tr class="border-b-1 border-gray-200 last.border-b-0">
-                        <td class="w-4-12 text-sm color-indigo-500 select-all border-r-1 border-gray-200 align-top pr-40 px-20 py-8">
+                      <tr>
+                        <td class="w-4-12 text-sm bg-gray-50 bg-opacity-40 color-indigo-500 select-all border-1 border-gray-100 align-top pr-40 px-20 py-8">
                           <code class="space-nowrap">{{utility.class}} <span class="opacity-30">{{ key.extraSelector }}</span></code>
                         </td>
-                        <td class="text-sm color-gray-700 align-top px-20 py-8">
+                        <td class="text-sm border-1 border-gray-100 color-gray-700 align-top px-20 py-8">
                           <pre class="overflow-auto">
                           {%- for item in key.staticProperties -%}
                             <code class="opacity-50">{{ item }}</code><br>

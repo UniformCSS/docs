@@ -21,7 +21,7 @@ The following default shadow configurations are applied. To see a more visual re
   $config: (
     shadows: (
       2xs: (
-        0 1px 2px 0 rgba(var(--gray-500), 0.1)
+        0 1px 2px rgba(var(--gray-500), 0.1)
       ),
       xs: (
         0 2px 4px rgba(var(--gray-500), 0.15)
@@ -101,7 +101,7 @@ If you are using the precompiled version of Uniform, you can customize theme pro
 
 ```css
 :root {
-  --shadow-2xs: 0 1px 2px 0 rgba(var(--gray-500), 0.1);
+  --shadow-2xs: 0 1px 2px rgba(var(--gray-500), 0.1);
   --shadow-xs: 0 2px 4px rgba(var(--gray-500), 0.15);
   --shadow-sm: 0 3px 6px rgba(var(--gray-500), 0.2);
   --shadow-md: 0 4px 8px rgba(var(--gray-500), 0.25);

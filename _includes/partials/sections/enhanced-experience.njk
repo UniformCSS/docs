@@ -35,8 +35,10 @@
               x-show.transition.in.opacity.duration.400="tab === 0">
 
               <div class="text-center md.text-left">
-                <h3 class="font-3xl leading-130 md.text-4xl lg.text-5xl extrabold tracking-tight mb-24"><span class="color-blue-400">Powerful HSL</span> <br>color manipulations</h3>
-                <p class="text-lg color-gray-600 mb-32">No need to spend hours configuring colors, just set hue and saturation for your blue, secondary, and secondary colors and you're good to go.</p>
+                <h3 class="font-3xl leading-130 md.text-4xl lg.text-5xl extrabold tracking-tight mb-24"><span class="color-blue-400">
+                  Flexible colors</span> <br>for every need
+                </h3>
+                <p class="text-lg color-gray-600 mb-32">No need to spend hours configuring colors. Start building your dream UI with a wide range of colors with flexible tints, shades, and opacities.</p>
                 <a href="/docs/color-system" class="text-lg color-blue-400 hover.color-blue-600 semibold">See how colors work →</a>
               </div>
 
@@ -171,7 +173,6 @@
                   {{ add_animation | safe }}
                   {% endhighlight %}
                 </div>
-                
               </div>
             </div>
           </div>
@@ -268,9 +269,9 @@
 <section class="block md.hidden mb-96 last.mb-0" x-data="tabs()">
   <div class="px-32 sm.text-center mb-64">
     <h3 class="font-8xl leading-100 extrabold tracking-tight mb-24">
-      <span class="color-blue-400">Powerful HSL</span> <br>color control
+      <span class="color-blue-400">Flexible colors</span> <br>for every need
     </h3>
-    <p class="sm.max-w-512 mx-auto text-xl color-gray-600 mb-32">No need to spend hours configuring colors, just set hue and saturation for your blue, secondary, and secondary colors and you're good to go.</p>
+    <p class="sm.max-w-512 mx-auto text-xl color-gray-600 mb-32">No need to spend hours configuring colors. Start building your dream UI with a wide range of colors with flexible tints, shades, and opacities.</p>
     <a href="/docs/color-system" class="text-xl color-blue-400 semibold">See how colors work →</a>
 
     <div class="pt-48">
@@ -414,6 +415,14 @@
     </h3>
     <p class="sm.max-w-512 mx-auto text-xl color-gray-600 mb-32">Animations are great for providing extra context for your users. Apply bounce, ping, pulse, and spin animations to any element or even add your own.</p>
     <a href="/docs/keyframes" class="text-xl color-blue-400 semibold">Learn about keyframes →</a>
+
+    <div class="pt-48">
+      <div class="radius-lg overflow-hidden">
+        {% highlight "html" %}
+        {{ add_animation | safe }}
+        {% endhighlight %}
+      </div>
+    </div>
 
   </div>
 

@@ -56,6 +56,7 @@ MARKDOWN PLUGIN
 --markdown-th-weight
 --markdown-th-transform
 --markdown-th-tracking
+--markdown-th-bg-color
 --markdown-th-color
 --markdown-td-padding
 
@@ -249,7 +250,7 @@ TABLE
 
 .markdown > table th,
 .markdown > table td {
-	border: var(--markdown-table-border, 1px solid fill(gray-200));
+	border: var(--markdown-table-border, 1px solid fill(gray-100));
 }
 .markdown > table	th {
 	padding: var(--markdown-th-padding, 1em);
@@ -257,6 +258,7 @@ TABLE
 	font-weight: var(--markdown-th-weight, 700);
 	text-transform: var(--markdown-th-transform, uppercase);
 	letter-spacing: var(--markdown-th-tracking, 0.04em);
+	background-color: var(--markdown-th-bg-color, fill(gray-50, .4));
 	color: var(--markdown-th-color, fill(gray-500));
 }
 .markdown > table	td {

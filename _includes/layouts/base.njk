@@ -48,16 +48,11 @@
 
 {{ content | safe }}
 
-<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
-
-function selectURL(selectObject) {
-  var value = selectObject.value;  
-  window.location=value;
-}
 
 function searchShortcut(e) {
   var selection = document.querySelector('.js-docsearch') !== null;
@@ -70,7 +65,29 @@ function searchShortcut(e) {
 
 document.onkeydown = searchShortcut;
 
-function tabs() {                  
+
+document.addEventListener('alpine:init', () => {
+  Alpine.data('dropdown', () => ({
+    width: 0,
+    left: 0,
+    tab: 0,
+
+    init: function() {
+      active = this.$el.querySelector('.is-active');
+      this.width =  active.offsetWidth;
+      this.left =  active.offsetLeft;
+    },
+    switchTabs(e, targetTab) {
+      this.tab = targetTab,
+      this.width = e.currentTarget.offsetWidth;
+      this.left =  e.currentTarget.offsetLeft;
+    }
+  }))
+})
+
+
+
+{# function tabs() {                  
   return {
     width: 0,
     left: 0,
@@ -94,7 +111,7 @@ function tabs() {
       this.left =  e.currentTarget.offsetLeft;
     }
   }
-}
+} #}
 
 docsearch({
   apiKey: '041931dc20e82036bcc5ef4b413bbfdb',

@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ThinkUniform/uniformcss">
-    <img src="icon.svg" alt="Logo" width="96" height="96">
+    <img src="icon.svg" alt="Logo" width="64" height="64">
   </a>
 
   <h3 align="center">Uniform CSS</h3>

@@ -277,6 +277,7 @@ LISTS
 .markdown > ul {
 	margin-bottom: var(--markdown-list-margin, 1.25em);
 	line-height: var(--markdown-list-leading, 1.875);
+	color: var(--markdown-p-color, fill(gray-600));
 }
 
 .markdown > ol li,

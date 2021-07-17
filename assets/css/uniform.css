@@ -52824,6 +52824,7 @@ LISTS
 .markdown > ul {
   margin-bottom: var(--markdown-list-margin, 1.25em);
   line-height: var(--markdown-list-leading, 1.875);
+  color: var(--markdown-p-color, rgba(var(--gray-600), 1));
 }
 
 .markdown > ol li,

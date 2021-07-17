@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ThinkUniform/uniformcss">
-    <img src="apple-touch-icon.png" alt="Logo" width="90" height="90">
+    <img src="icon.svg" alt="Logo" width="96" height="96">
   </a>
 
   <h3 align="center">Uniform CSS</h3>

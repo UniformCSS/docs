@@ -4,10 +4,10 @@
   "description": "A fully configurable utility class generator and CSS framework built for Sass projects.",
   "main": "sass/uniform.sass",
   "scripts": {
-    "uniform:compile": "sass --load-path=./sass --no-source-map sass/main.scss css/uniform.css",
-    "uniform:compress": "sass --load-path=./sass --no-source-map sass/main.scss css/uniform.min.css --style compressed",
-    "uniform:watch": "sass --load-path=./sass --no-source-map --watch sass/main.scss css/uniform.css",
-    "uniform:watch-compressed": "sass --load-path=./sass --no-source-map --watch sass/main.scss css/uniform.min.css --style compressed",
+    "uniform:compile": "sass --load-path=../node_modules/uniformcss --load-path=./sass --no-source-map sass/main.scss css/uniform.css",
+    "uniform:compress": "sass --load-path=../node_modules/uniformcss --load-path=./sass --no-source-map sass/main.scss css/uniform.min.css --style compressed",
+    "uniform:watch": "sass --load-path=../node_modules/uniformcss --load-path=./sass --no-source-map --watch sass/main.scss css/uniform.css",
+    "uniform:watch-compressed": "sass --load-path=../node_modules/uniformcss --load-path=./sass --no-source-map --watch sass/main.scss css/uniform.min.css --style compressed",
     "uniform:purgecss": "purgecss -c purgecss.config.js -o css/",
     "uniform": "npm run uniform:compress && npm run uniform:purgecss"
   },

@@ -52,7 +52,6 @@ To apply basic configuration, simply define CSS variable overrides inside a `:ro
 ```css
 :root {
   --font-sans: 'inter', Helvetica, Arial, Sans-Serif;
-  --primary-hue: 240;
-  --primary-sat: 63%;
+  --bold: 700;
 }
 ```

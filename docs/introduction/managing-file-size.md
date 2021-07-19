@@ -31,7 +31,7 @@ Uniform comes in at **48kb brotli** and **675kb minified**. Below is a compariso
 
 ## Merged Pseudos
 
-Uniform compiles pseudos using comma seperators rather than duplicating whole sets of selectors. This makes it possible to activate multiple pseudo variants without much impact on final size.
+When `comma-compression` setting is enabled, pseudo variants will be collaped rather than duplicating whole sets of selectors. This makes it possible to activate multiple pseudo variants without much impact on final size.
 
 ```css
 /* main.css */

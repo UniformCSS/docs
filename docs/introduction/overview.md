@@ -6,7 +6,7 @@ date: 2021-01-01
 
 ## Introducing Uniform
 
-Uniform CSS is a utility-first CSS framework **built entirely in Sass**. This means you get the power of a utility-first workflow without losing the productiveness of Sass. You can get started via the CDN or as a Sass dependency.
+Uniform CSS is a fully configurable utility generator and CSS framework **built entirely in Sass**. This means you get the power of a utility-first workflow without losing the productiveness of Sass. You can get started via the CDN or as a Sass dependency.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -54,18 +54,18 @@ Remove and extend colors? Check. Replace breakpoints? Check. Alias property name
 
 ### 3. Built with CSS Variables in mind
 
-Prefer not to worry about preprocessors and just start building your site? Just add the pre-packaged CDN version of Uniform and customize fonts and colors to match your project by activating and overriding CSS variables. It's that easy.
+Prefer not to worry about preprocessors and just start building your site? Just add the pre-packaged CDN version and customize the theme simply by overriding CSS variables. It's that easy.
 
 ```html
 <!-- index.html -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/UniformCSS/UniformCSS/css/uniform.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/ThinkUniform/uniformcss/css/uniform.min.css" />
 ```
 
 ```css
 /* main.css */
 :root {
   --font-sans: 'my-font', sans-serif;
-  --primary-hue: 210;
+  --bold: 700;
 }
 ```
 
@@ -112,8 +112,8 @@ Prefer to write components the old fashioned way? You have all benefits of Sass 
 // main.scss
 .custom-element {
   padding: size(20, 24);
-  font-weight: font-weight(bold);
-  background-color: fill(primary, 600);
+  font-weight: font(bold);
+  background-color: fill(primary-600);
 }
 ```
 
@@ -122,13 +122,47 @@ Prefer to write components the old fashioned way? You have all benefits of Sass 
 .custom-element {
   padding: 1.25rem 1.5rem;
   font-weight: var(--bold); /* 700 */
-  background-color: hsl(var(--primary-hue), var(--primary-sat), var(--ltn-600));
+  background-color: rgba(var(--primary-500), 1);
 }
 ```
 
-### 6. Exclude or include only the properties you need
+### 6. Extract components as design patterns emerge
 
-Every aspect of Uniform CSS is optional, you can easily remove all properties and only include what you need, as you need them.
+Quickly extract components as design patterns emerge with the `apply()` mixin.
+
+```scss
+// main.scss
+.parent {
+  @include apply('p-40 shadow-2xs radius-2xl');
+  .child {
+    @include apply('hover.opacity-50 p-24 md.p-64');
+  }
+}
+```
+
+```css
+/* main.css */
+.parent {
+  padding: 2.5rem;
+  box-shadow: var(--shadow-2xs);
+  border-radius: var(--radius-2xl);
+}
+.parent .child {
+  padding: 1.5rem;
+}
+.parent .child:hover {
+  opacity: 0.5;
+}
+@media (min-width: 1024px) {
+  .parent .child {
+    padding: 4rem;
+  }
+}
+```
+
+### 7. Exclude or include only the properties you need
+
+No need to be a utility maximalist, easily remove and include only the properties you need, as you need them.
 
 ```scss
 // main.scss
@@ -147,7 +181,7 @@ Every aspect of Uniform CSS is optional, you can easily remove all properties an
 );
 ```
 
-### 7. Designed to be Lightweight
+### 8. Designed to be Lightweight
 
 Lightweight in size but is packed with all the utility goodness. Uniform achieves this by ensuring each property is compiled with a careful selection of default pseudo and responsive variants.
 

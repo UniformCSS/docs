@@ -59,6 +59,7 @@ The following advanced build setting definitions apply.
 | - | - | - |
 | `headless` | `false` | Loads Uniform CSS in Headless Mode. |
 | `comma-compression` | `false` | Collapses pseudo variants. |
+| `css-variables` | `true` | Enable theme overrides via CSS variables. |
 
 {.text-left style=""}
 
@@ -111,3 +112,7 @@ When `comma-compression` is enabled, pseudo variants will be joined to its stand
 }
 ...
 ```
+
+### CSS Variables
+
+When `css-variables` is enabled, theme settings become variablized as custom properties allowing them to be overridable.

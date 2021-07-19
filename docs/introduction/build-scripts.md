@@ -6,9 +6,9 @@ date: 2021-01-03
 
 ## Build Scripts
 
-Sass preprocessor is the only thing you need to get up and running. Uniform CSS comes with a predefined build commands in the `package.json`. The following **npm build commands** are available.
+Sass preprocessor is the only thing you need to get up and running. Uniform CSS comes with a predefined build commands in the `package.json`. The following **build commands** are available.
 
-> By default, the following build scripts will automatically input `styles.scss` and output files into the root directory. You can modify `package.json` to change the output location.
+> By default, the following build scripts will automatically input `main.scss` and output files into the root directory. You can modify `package.json` to change the output location.
 
 {% include shortcodes/video, id: 'tLqqi5gyxQg' %}
 
@@ -19,7 +19,7 @@ Sass preprocessor is the only thing you need to get up and running. Uniform CSS 
 The following command will compile your Sass with `--style compressed` enabled. This is the command you should run when outputting for **production**.
 
 ```bash
-npm run uniform
+yarn uniform
 ```
 
 ---
@@ -29,7 +29,7 @@ npm run uniform
 The following command will compile `styles.scss` and output `styles.css`.
 
 ```bash
-npm run uniform:compile
+yarn uniform:compile
 ```
 
 ---
@@ -39,7 +39,7 @@ npm run uniform:compile
 The following command will compile `styles.scss` file and watch for changes.
 
 ```bash
-npm run uniform:watch
+yarn uniform:watch
 ```
 
 ---
@@ -49,7 +49,7 @@ npm run uniform:watch
 The following command will compile `styles.scss` file and watch for changes with `--style compressed` enabled.
 
 ```bash
-npm run uniform:watch
+yarn uniform:watch-compressed
 ```
 
 ---

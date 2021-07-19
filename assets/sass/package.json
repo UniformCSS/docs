@@ -2,11 +2,11 @@
   "name": "uniformcss",
   "version": "0.9.0",
   "description": "Fully customizable utility-first CSS framework built in Sass. Say good-bye to CSS bloat and start building future-proof sites today.",
-  "main": "styles.sass",
+  "main": "main.sass",
   "scripts": {
-    "uniform:compile": "sass --load-path=./ --no-source-map styles.scss ../assets/css/styles.css",
-    "uniform:watch": "sass --load-path=./ --no-source-map --watch styles.scss ../assets/css/styles.css",
-    "uniform": "sass --load-path=./ --no-source-map styles.scss ../assets/css/styles.css --style compressed"
+    "uniform:compile": "sass --load-path=./ --no-source-map main.scss ../assets/css/main.css",
+    "uniform:watch": "sass --load-path=./ --no-source-map --watch main.scss ../assets/css/main.css",
+    "uniform": "sass --load-path=./ --no-source-map main.scss ../assets/css/main.css --style compressed"
   },
   "keywords": [
     "css",

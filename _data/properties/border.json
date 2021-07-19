@@ -151,6 +151,94 @@
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
+        "class": "border-primary-50",
+        "properties": ["border: rgba(var(--primary-50), var(--border-opacity));"]
+      },
+      {
+        "class": "border-primary-100",
+        "properties": ["border: rgba(var(--primary-100), var(--border-opacity));"]
+      },
+      {
+        "class": "border-primary-200",
+        "properties": ["border: rgba(var(--primary-200), var(--border-opacity));"]
+      },
+      {
+        "class": "border-primary-300",
+        "properties": ["border: rgba(var(--primary-300), var(--border-opacity));"]
+      },
+      {
+        "class": "border-primary-400",
+        "properties": ["border: rgba(var(--primary-400), var(--border-opacity));"]
+      },
+      {
+        "class": "border-primary-500",
+        "properties": ["border: rgba(var(--primary-500), var(--border-opacity));"]
+      },
+      {
+        "class": "border-primary-600",
+        "properties": ["border: rgba(var(--primary-600), var(--border-opacity));"]
+      },
+      {
+        "class": "border-primary-700",
+        "properties": ["border: rgba(var(--primary-700), var(--border-opacity));"]
+      },
+      {
+        "class": "border-primary-800",
+        "properties": ["border: rgba(var(--primary-800), var(--border-opacity));"]
+      },
+      {
+        "class": "border-primary-900",
+        "properties": ["border: rgba(var(--primary-900), var(--border-opacity));"]
+      },
+      {
+        "class": "border-primary-950",
+        "properties": ["border: rgba(var(--primary-950), var(--border-opacity));"]
+      },
+      {
+        "class": "border-secondary-50",
+        "properties": ["border: rgba(var(--secondary-50), var(--border-opacity));"]
+      },
+      {
+        "class": "border-secondary-100",
+        "properties": ["border: rgba(var(--secondary-100), var(--border-opacity));"]
+      },
+      {
+        "class": "border-secondary-200",
+        "properties": ["border: rgba(var(--secondary-200), var(--border-opacity));"]
+      },
+      {
+        "class": "border-secondary-300",
+        "properties": ["border: rgba(var(--secondary-300), var(--border-opacity));"]
+      },
+      {
+        "class": "border-secondary-400",
+        "properties": ["border: rgba(var(--secondary-400), var(--border-opacity));"]
+      },
+      {
+        "class": "border-secondary-500",
+        "properties": ["border: rgba(var(--secondary-500), var(--border-opacity));"]
+      },
+      {
+        "class": "border-secondary-600",
+        "properties": ["border: rgba(var(--secondary-600), var(--border-opacity));"]
+      },
+      {
+        "class": "border-secondary-700",
+        "properties": ["border: rgba(var(--secondary-700), var(--border-opacity));"]
+      },
+      {
+        "class": "border-secondary-800",
+        "properties": ["border: rgba(var(--secondary-800), var(--border-opacity));"]
+      },
+      {
+        "class": "border-secondary-900",
+        "properties": ["border: rgba(var(--secondary-900), var(--border-opacity));"]
+      },
+      {
+        "class": "border-secondary-950",
+        "properties": ["border: rgba(var(--secondary-950), var(--border-opacity));"]
+      },
+      {
         "class": "border-transparent",
         "properties": ["border: transparent;"]
       },
@@ -160,19 +248,19 @@
       },
       {
         "class": "border-success",
-        "properties": ["border: var(--border-success, rgba(var(--green-300), var(--bg-opacity)));"]
+        "properties": ["border: var(--border-success, rgba(18, 181, 57, var(--bg-opacity)));"]
       },
       {
         "class": "border-warning",
-        "properties": ["border: var(--border-warning, rgba(var(--yellow-300), var(--bg-opacity)));"]
+        "properties": ["border: var(--border-warning, rgba(210, 127, 0, var(--bg-opacity)));"]
       },
       {
         "class": "border-danger",
-        "properties": ["border: var(--border-danger, rgba(var(--red-200), var(--bg-opacity)));"]
+        "properties": ["border: var(--border-danger, rgba(203, 18, 0, var(--bg-opacity)));"]
       },
       {
         "class": "border-info",
-        "properties": ["border: var(--border-info, rgba(var(--teal-500), var(--bg-opacity)));"]
+        "properties": ["border: var(--border-info, rgba(0, 200, 177, var(--bg-opacity)));"]
       },
       {
         "class": "border-white",
@@ -181,6 +269,50 @@
       {
         "class": "border-black",
         "properties": ["border: rgba(var(--black), var(--border-opacity));"]
+      },
+      {
+        "class": "border-warm-gray-50",
+        "properties": ["border: rgba(var(--warm-gray-50), var(--border-opacity));"]
+      },
+      {
+        "class": "border-warm-gray-100",
+        "properties": ["border: rgba(var(--warm-gray-100), var(--border-opacity));"]
+      },
+      {
+        "class": "border-warm-gray-200",
+        "properties": ["border: rgba(var(--warm-gray-200), var(--border-opacity));"]
+      },
+      {
+        "class": "border-warm-gray-300",
+        "properties": ["border: rgba(var(--warm-gray-300), var(--border-opacity));"]
+      },
+      {
+        "class": "border-warm-gray-400",
+        "properties": ["border: rgba(var(--warm-gray-400), var(--border-opacity));"]
+      },
+      {
+        "class": "border-warm-gray-500",
+        "properties": ["border: rgba(var(--warm-gray-500), var(--border-opacity));"]
+      },
+      {
+        "class": "border-warm-gray-600",
+        "properties": ["border: rgba(var(--warm-gray-600), var(--border-opacity));"]
+      },
+      {
+        "class": "border-warm-gray-700",
+        "properties": ["border: rgba(var(--warm-gray-700), var(--border-opacity));"]
+      },
+      {
+        "class": "border-warm-gray-800",
+        "properties": ["border: rgba(var(--warm-gray-800), var(--border-opacity));"]
+      },
+      {
+        "class": "border-warm-gray-900",
+        "properties": ["border: rgba(var(--warm-gray-900), var(--border-opacity));"]
+      },
+      {
+        "class": "border-warm-gray-950",
+        "properties": ["border: rgba(var(--warm-gray-950), var(--border-opacity));"]
       },
       {
         "class": "border-gray-50",
@@ -225,6 +357,50 @@
       {
         "class": "border-gray-950",
         "properties": ["border: rgba(var(--gray-950), var(--border-opacity));"]
+      },
+      {
+        "class": "border-cool-gray-50",
+        "properties": ["border: rgba(var(--cool-gray-50), var(--border-opacity));"]
+      },
+      {
+        "class": "border-cool-gray-100",
+        "properties": ["border: rgba(var(--cool-gray-100), var(--border-opacity));"]
+      },
+      {
+        "class": "border-cool-gray-200",
+        "properties": ["border: rgba(var(--cool-gray-200), var(--border-opacity));"]
+      },
+      {
+        "class": "border-cool-gray-300",
+        "properties": ["border: rgba(var(--cool-gray-300), var(--border-opacity));"]
+      },
+      {
+        "class": "border-cool-gray-400",
+        "properties": ["border: rgba(var(--cool-gray-400), var(--border-opacity));"]
+      },
+      {
+        "class": "border-cool-gray-500",
+        "properties": ["border: rgba(var(--cool-gray-500), var(--border-opacity));"]
+      },
+      {
+        "class": "border-cool-gray-600",
+        "properties": ["border: rgba(var(--cool-gray-600), var(--border-opacity));"]
+      },
+      {
+        "class": "border-cool-gray-700",
+        "properties": ["border: rgba(var(--cool-gray-700), var(--border-opacity));"]
+      },
+      {
+        "class": "border-cool-gray-800",
+        "properties": ["border: rgba(var(--cool-gray-800), var(--border-opacity));"]
+      },
+      {
+        "class": "border-cool-gray-900",
+        "properties": ["border: rgba(var(--cool-gray-900), var(--border-opacity));"]
+      },
+      {
+        "class": "border-cool-gray-950",
+        "properties": ["border: rgba(var(--cool-gray-950), var(--border-opacity));"]
       },
       {
         "class": "border-red-50",

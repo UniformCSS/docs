@@ -1,15 +1,18 @@
 @use "sass:map";
 @use "sass:list";
 @use "sass:meta";
-@use "sass:color";
 @use "uniform/core" as *;
 
 $exclude: map.get($all-config, excludes);
 $include: map.get($all-config, includes);
 $headless: map.get($all-config, headless);
+$css-variables: map.get($all-config, css-variables);
 
 $include-condition: true;
 @if ( $headless == true ) {
+  $include-condition: false;
+}
+@if ( $css-variables == false ) {
   $include-condition: false;
 }
 @if ( list.index($exclude, all) ) {
@@ -20,10 +23,6 @@ $include-condition: true;
 }
 @if ( list.index($include, root) ) {
   $include-condition: true;
-}
-
-@function hex2rgb($hexColor) {
-  @return "#{color.red($hexColor)},#{color.green($hexColor)},#{color.blue($hexColor)}";
 }
 
 

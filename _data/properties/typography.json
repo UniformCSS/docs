@@ -8,6 +8,94 @@
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
+        "class": "color-primary-50",
+        "properties": ["color: rgba(var(--primary-50), var(--color-opacity));"]
+      },
+      {
+        "class": "color-primary-100",
+        "properties": ["color: rgba(var(--primary-100), var(--color-opacity));"]
+      },
+      {
+        "class": "color-primary-200",
+        "properties": ["color: rgba(var(--primary-200), var(--color-opacity));"]
+      },
+      {
+        "class": "color-primary-300",
+        "properties": ["color: rgba(var(--primary-300), var(--color-opacity));"]
+      },
+      {
+        "class": "color-primary-400",
+        "properties": ["color: rgba(var(--primary-400), var(--color-opacity));"]
+      },
+      {
+        "class": "color-primary-500",
+        "properties": ["color: rgba(var(--primary-500), var(--color-opacity));"]
+      },
+      {
+        "class": "color-primary-600",
+        "properties": ["color: rgba(var(--primary-600), var(--color-opacity));"]
+      },
+      {
+        "class": "color-primary-700",
+        "properties": ["color: rgba(var(--primary-700), var(--color-opacity));"]
+      },
+      {
+        "class": "color-primary-800",
+        "properties": ["color: rgba(var(--primary-800), var(--color-opacity));"]
+      },
+      {
+        "class": "color-primary-900",
+        "properties": ["color: rgba(var(--primary-900), var(--color-opacity));"]
+      },
+      {
+        "class": "color-primary-950",
+        "properties": ["color: rgba(var(--primary-950), var(--color-opacity));"]
+      },
+      {
+        "class": "color-secondary-50",
+        "properties": ["color: rgba(var(--secondary-50), var(--color-opacity));"]
+      },
+      {
+        "class": "color-secondary-100",
+        "properties": ["color: rgba(var(--secondary-100), var(--color-opacity));"]
+      },
+      {
+        "class": "color-secondary-200",
+        "properties": ["color: rgba(var(--secondary-200), var(--color-opacity));"]
+      },
+      {
+        "class": "color-secondary-300",
+        "properties": ["color: rgba(var(--secondary-300), var(--color-opacity));"]
+      },
+      {
+        "class": "color-secondary-400",
+        "properties": ["color: rgba(var(--secondary-400), var(--color-opacity));"]
+      },
+      {
+        "class": "color-secondary-500",
+        "properties": ["color: rgba(var(--secondary-500), var(--color-opacity));"]
+      },
+      {
+        "class": "color-secondary-600",
+        "properties": ["color: rgba(var(--secondary-600), var(--color-opacity));"]
+      },
+      {
+        "class": "color-secondary-700",
+        "properties": ["color: rgba(var(--secondary-700), var(--color-opacity));"]
+      },
+      {
+        "class": "color-secondary-800",
+        "properties": ["color: rgba(var(--secondary-800), var(--color-opacity));"]
+      },
+      {
+        "class": "color-secondary-900",
+        "properties": ["color: rgba(var(--secondary-900), var(--color-opacity));"]
+      },
+      {
+        "class": "color-secondary-950",
+        "properties": ["color: rgba(var(--secondary-950), var(--color-opacity));"]
+      },
+      {
         "class": "border-transparent",
         "properties": ["border: transparent;"]
       },
@@ -17,19 +105,19 @@
       },
       {
         "class": "border-success",
-        "properties": ["border: rgba(var(--green-300), var(--bg-opacity));"]
+        "properties": ["border: rgba(18, 181, 57, var(--bg-opacity));"]
       },
       {
         "class": "border-warning",
-        "properties": ["border: rgba(var(--yellow-200), var(--bg-opacity));"]
+        "properties": ["border: rgba(210, 127, 0, var(--bg-opacity));"]
       },
       {
         "class": "border-danger",
-        "properties": ["border: rgba(var(--red-200), var(--bg-opacity));"]
+        "properties": ["border: rgba(203, 18, 0, var(--bg-opacity));"]
       },
       {
         "class": "border-info",
-        "properties": ["border: rgba(var(--teal-500), var(--bg-opacity));"]
+        "properties": ["border: rgba(0, 200, 177, var(--bg-opacity));"]
       },
       {
         "class": "color-white",
@@ -38,6 +126,50 @@
       {
         "class": "color-black",
         "properties": ["color: rgba(var(--black), var(--color-opacity));"]
+      },
+      {
+        "class": "color-warm-gray-50",
+        "properties": ["color: rgba(var(--warm-gray-50), var(--color-opacity));"]
+      },
+      {
+        "class": "color-warm-gray-100",
+        "properties": ["color: rgba(var(--warm-gray-100), var(--color-opacity));"]
+      },
+      {
+        "class": "color-warm-gray-200",
+        "properties": ["color: rgba(var(--warm-gray-200), var(--color-opacity));"]
+      },
+      {
+        "class": "color-warm-gray-300",
+        "properties": ["color: rgba(var(--warm-gray-300), var(--color-opacity));"]
+      },
+      {
+        "class": "color-warm-gray-400",
+        "properties": ["color: rgba(var(--warm-gray-400), var(--color-opacity));"]
+      },
+      {
+        "class": "color-warm-gray-500",
+        "properties": ["color: rgba(var(--warm-gray-500), var(--color-opacity));"]
+      },
+      {
+        "class": "color-warm-gray-600",
+        "properties": ["color: rgba(var(--warm-gray-600), var(--color-opacity));"]
+      },
+      {
+        "class": "color-warm-gray-700",
+        "properties": ["color: rgba(var(--warm-gray-700), var(--color-opacity));"]
+      },
+      {
+        "class": "color-warm-gray-800",
+        "properties": ["color: rgba(var(--warm-gray-800), var(--color-opacity));"]
+      },
+      {
+        "class": "color-warm-gray-900",
+        "properties": ["color: rgba(var(--warm-gray-900), var(--color-opacity));"]
+      },
+      {
+        "class": "color-warm-gray-950",
+        "properties": ["color: rgba(var(--warm-gray-950), var(--color-opacity));"]
       },
       {
         "class": "color-gray-50",
@@ -82,6 +214,50 @@
       {
         "class": "color-gray-950",
         "properties": ["color: rgba(var(--gray-950), var(--color-opacity));"]
+      },
+      {
+        "class": "color-cool-gray-50",
+        "properties": ["color: rgba(var(--cool-gray-50), var(--color-opacity));"]
+      },
+      {
+        "class": "color-cool-gray-100",
+        "properties": ["color: rgba(var(--cool-gray-100), var(--color-opacity));"]
+      },
+      {
+        "class": "color-cool-gray-200",
+        "properties": ["color: rgba(var(--cool-gray-200), var(--color-opacity));"]
+      },
+      {
+        "class": "color-cool-gray-300",
+        "properties": ["color: rgba(var(--cool-gray-300), var(--color-opacity));"]
+      },
+      {
+        "class": "color-cool-gray-400",
+        "properties": ["color: rgba(var(--cool-gray-400), var(--color-opacity));"]
+      },
+      {
+        "class": "color-cool-gray-500",
+        "properties": ["color: rgba(var(--cool-gray-500), var(--color-opacity));"]
+      },
+      {
+        "class": "color-cool-gray-600",
+        "properties": ["color: rgba(var(--cool-gray-600), var(--color-opacity));"]
+      },
+      {
+        "class": "color-cool-gray-700",
+        "properties": ["color: rgba(var(--cool-gray-700), var(--color-opacity));"]
+      },
+      {
+        "class": "color-cool-gray-800",
+        "properties": ["color: rgba(var(--cool-gray-800), var(--color-opacity));"]
+      },
+      {
+        "class": "color-cool-gray-900",
+        "properties": ["color: rgba(var(--cool-gray-900), var(--color-opacity));"]
+      },
+      {
+        "class": "color-cool-gray-950",
+        "properties": ["color: rgba(var(--cool-gray-950), var(--color-opacity));"]
       },
       {
         "class": "color-red-50",

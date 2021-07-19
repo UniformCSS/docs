@@ -48,10 +48,10 @@ layout: layouts/base.njk
         <h1 class="text-5xl bold tracking-tight mb-10">
           {{ title | safe }}
         </h1>
-        <p class="text-xl medium color-gray-600 tracking-tight mb-56">
+        <p class="text-xl medium color-cool-gray-600 tracking-tight mb-56">
           {{ description | safe }}
         </p>
-        <hr class="border-t-4 border-dotted border-gray-100">
+        <hr class="border-t-4 border-dotted border-cool-gray-100">
         
         {%- for propertyKey, propertyValue in properties -%}
           {%- for key in propertyValue -%}
@@ -75,10 +75,10 @@ layout: layouts/base.njk
                   <tbody>
                     {%- for utility in key.utilities -%}
                       <tr>
-                        <td class="w-4-12 text-sm bg-gray-50 bg-opacity-40 color-indigo-500 select-all border-1 border-gray-100 align-top pr-40 px-20 py-8">
+                        <td class="w-4-12 text-sm bg-cool-gray-50 bg-opacity-40 color-indigo-500 select-all border-1 border-cool-gray-100 align-top pr-40 px-20 py-8">
                           <code class="space-nowrap">{{utility.class}} <span class="opacity-30">{{ key.extraSelector }}</span></code>
                         </td>
-                        <td class="text-sm border-1 border-gray-100 color-gray-700 align-top px-20 py-8">
+                        <td class="text-sm border-1 border-cool-gray-100 color-cool-gray-700 align-top px-20 py-8">
                           <pre class="overflow-auto">
                           {%- for item in key.staticProperties -%}
                             <code class="opacity-50">{{ item }}</code><br>

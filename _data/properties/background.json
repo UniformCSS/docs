@@ -56,7 +56,95 @@
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
-        "class": "borderbg-transparent",
+        "class": "bg-primary-50",
+        "properties": ["background-color: rgba(var(--primary-50), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-primary-100",
+        "properties": ["background-color: rgba(var(--primary-100), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-primary-200",
+        "properties": ["background-color: rgba(var(--primary-200), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-primary-300",
+        "properties": ["background-color: rgba(var(--primary-300), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-primary-400",
+        "properties": ["background-color: rgba(var(--primary-400), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-primary-500",
+        "properties": ["background-color: rgba(var(--primary-500), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-primary-600",
+        "properties": ["background-color: rgba(var(--primary-600), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-primary-700",
+        "properties": ["background-color: rgba(var(--primary-700), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-primary-800",
+        "properties": ["background-color: rgba(var(--primary-800), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-primary-900",
+        "properties": ["background-color: rgba(var(--primary-900), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-primary-950",
+        "properties": ["background-color: rgba(var(--primary-950), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-secondary-50",
+        "properties": ["background-color: rgba(var(--secondary-50), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-secondary-100",
+        "properties": ["background-color: rgba(var(--secondary-100), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-secondary-200",
+        "properties": ["background-color: rgba(var(--secondary-200), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-secondary-300",
+        "properties": ["background-color: rgba(var(--secondary-300), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-secondary-400",
+        "properties": ["background-color: rgba(var(--secondary-400), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-secondary-500",
+        "properties": ["background-color: rgba(var(--secondary-500), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-secondary-600",
+        "properties": ["background-color: rgba(var(--secondary-600), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-secondary-700",
+        "properties": ["background-color: rgba(var(--secondary-700), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-secondary-800",
+        "properties": ["background-color: rgba(var(--secondary-800), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-secondary-900",
+        "properties": ["background-color: rgba(var(--secondary-900), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-secondary-950",
+        "properties": ["background-color: rgba(var(--secondary-950), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-transparent",
         "properties": ["bg: transparent;"]
       },
       {
@@ -65,19 +153,19 @@
       },
       {
         "class": "bg-success",
-        "properties": ["background-color: var(--bg-success, rgba(var(--green-50), var(--bg-opacity)));"]
+        "properties": ["background-color: var(--bg-success, rgba(18, 181, 57, var(--bg-opacity)));"]
       },
       {
         "class": "bg-warning",
-        "properties": ["background-color: var(--bg-warning, rgba(var(--yellow-50), var(--bg-opacity)));"]
+        "properties": ["background-color: var(--bg-warning, rgba(210, 127, 0, var(--bg-opacity)));"]
       },
       {
         "class": "bg-danger",
-        "properties": ["background-color: var(--bg-danger, rgba(var(--red-50), var(--bg-opacity)));"]
+        "properties": ["background-color: var(--bg-danger, rgba(203, 18, 0, var(--bg-opacity)));"]
       },
       {
         "class": "bg-info",
-        "properties": ["background-color: var(--bg-info, rgba(var(--teal-50), var(--bg-opacity)));"]
+        "properties": ["background-color: var(--bg-info, rgba(0, 200, 177, var(--bg-opacity)));"]
       },
       {
         "class": "bg-white",
@@ -86,6 +174,50 @@
       {
         "class": "bg-black",
         "properties": ["background-color: rgba(var(--black), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-warm-gray-50",
+        "properties": ["background-color: rgba(var(--warm-gray-50), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-warm-gray-100",
+        "properties": ["background-color: rgba(var(--warm-gray-100), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-warm-gray-200",
+        "properties": ["background-color: rgba(var(--warm-gray-200), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-warm-gray-300",
+        "properties": ["background-color: rgba(var(--warm-gray-300), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-warm-gray-400",
+        "properties": ["background-color: rgba(var(--warm-gray-400), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-warm-gray-500",
+        "properties": ["background-color: rgba(var(--warm-gray-500), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-warm-gray-600",
+        "properties": ["background-color: rgba(var(--warm-gray-600), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-warm-gray-700",
+        "properties": ["background-color: rgba(var(--warm-gray-700), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-warm-gray-800",
+        "properties": ["background-color: rgba(var(--warm-gray-800), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-warm-gray-900",
+        "properties": ["background-color: rgba(var(--warm-gray-900), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-warm-gray-950",
+        "properties": ["background-color: rgba(var(--warm-gray-950), var(--bg-opacity));"]
       },
       {
         "class": "bg-gray-50",
@@ -130,6 +262,50 @@
       {
         "class": "bg-gray-950",
         "properties": ["background-color: rgba(var(--gray-950), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-cool-gray-50",
+        "properties": ["background-color: rgba(var(--cool-gray-50), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-cool-gray-100",
+        "properties": ["background-color: rgba(var(--cool-gray-100), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-cool-gray-200",
+        "properties": ["background-color: rgba(var(--cool-gray-200), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-cool-gray-300",
+        "properties": ["background-color: rgba(var(--cool-gray-300), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-cool-gray-400",
+        "properties": ["background-color: rgba(var(--cool-gray-400), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-cool-gray-500",
+        "properties": ["background-color: rgba(var(--cool-gray-500), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-cool-gray-600",
+        "properties": ["background-color: rgba(var(--cool-gray-600), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-cool-gray-700",
+        "properties": ["background-color: rgba(var(--cool-gray-700), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-cool-gray-800",
+        "properties": ["background-color: rgba(var(--cool-gray-800), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-cool-gray-900",
+        "properties": ["background-color: rgba(var(--cool-gray-900), var(--bg-opacity));"]
+      },
+      {
+        "class": "bg-cool-gray-950",
+        "properties": ["background-color: rgba(var(--cool-gray-950), var(--bg-opacity));"]
       },
       {
         "class": "bg-red-50",

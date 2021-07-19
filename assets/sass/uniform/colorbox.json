@@ -1,38 +1,7 @@
 [
   {
     "properties": {
-      "steps": 8,
-      "hue": {
-        "start": 220,
-        "end": 220,
-        "curve": "easeOutQuad"
-      },
-      "saturation": {
-        "start": 0,
-        "end": 0.4,
-        "rate": 1,
-        "curve": "linear"
-      },
-      "brightness": {
-        "start": 1,
-        "end": 0.15,
-        "curve": "linear"
-      }
-    },
-    "options": {
-      "minorSteps": [
-        0,
-        0,
-        1,
-        6
-      ],
-      "name": "Gray",
-      "rotation": "clockwise"
-    }
-  },
-  {
-    "properties": {
-      "steps": 7,
+      "steps": 5,
       "hue": {
         "start": 350,
         "end": 10,
@@ -54,9 +23,11 @@
       "minorSteps": [
         0,
         0,
+        0,
         1,
-        4,
-        5
+        2,
+        3,
+        3
       ],
       "name": "Red",
       "rotation": "clockwise"
@@ -399,6 +370,99 @@
         3
       ],
       "name": "Pink",
+      "rotation": "clockwise"
+    }
+  },
+  {
+    "properties": {
+      "steps": 8,
+      "hue": {
+        "start": 220,
+        "end": 220,
+        "curve": "easeOutQuad"
+      },
+      "saturation": {
+        "start": 0,
+        "end": 0.4,
+        "rate": 1,
+        "curve": "linear"
+      },
+      "brightness": {
+        "start": 1,
+        "end": 0.15,
+        "curve": "linear"
+      }
+    },
+    "options": {
+      "minorSteps": [
+        0,
+        0,
+        1,
+        6
+      ],
+      "name": "Cool Gray",
+      "rotation": "clockwise"
+    }
+  },
+  {
+    "properties": {
+      "steps": 8,
+      "hue": {
+        "start": 220,
+        "end": 220,
+        "curve": "easeOutQuad"
+      },
+      "saturation": {
+        "start": 0,
+        "end": 0,
+        "rate": 1,
+        "curve": "linear"
+      },
+      "brightness": {
+        "start": 1,
+        "end": 0.15,
+        "curve": "linear"
+      }
+    },
+    "options": {
+      "minorSteps": [
+        0,
+        0,
+        1,
+        6
+      ],
+      "name": "Gray",
+      "rotation": "clockwise"
+    }
+  },
+  {
+    "properties": {
+      "steps": 8,
+      "hue": {
+        "start": 20,
+        "end": 20,
+        "curve": "easeOutQuad"
+      },
+      "saturation": {
+        "start": 0,
+        "end": 0.2,
+        "rate": 1,
+        "curve": "linear"
+      },
+      "brightness": {
+        "start": 1,
+        "end": 0.15,
+        "curve": "linear"
+      }
+    },
+    "options": {
+      "minorSteps": [
+        0,
+        0,
+        1,
+        6
+      ],
+      "name": "Warm Gray",
       "rotation": "clockwise"
     }
   }

@@ -1,5 +1,8 @@
 @use "uniform" as * with (
   $config: (
+		font-families: (
+			sans: 'Inter'
+		),
 		utilities: (
 			color: (
 				extend: (
@@ -7,6 +10,8 @@
 				)
 			)
 		),
+		// css-variables: false,
+		comma-compression: true,
     excludes: (
 			
     ),

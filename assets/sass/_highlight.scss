@@ -12,7 +12,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 
  code[class*="language-"],
  pre[class*="language-"] {
-	 color: fill(gray-200);
+	 color: fill(cool-gray-200);
 	 background: none;
 	 font-family: font(mono);
 	 font-size: font(sm);
@@ -43,7 +43,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
-	 background: fill(gray-950);
+	 background: fill(cool-gray-950);
  }
  
  /* Inline code */
@@ -134,7 +134,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  // OVERRIDES
 
 .token.comment {
-	color: fill(gray-400);
+	color: fill(cool-gray-400);
 }
 
 .token.selector {
@@ -150,7 +150,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 }
   
 .token.punctuation {
-	color: fill(gray-400);
+	color: fill(cool-gray-400);
 }
 
 .token.attr-name {
@@ -186,7 +186,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 }
 
 .token.operator {
-	color: fill(gray-300);
+	color: fill(cool-gray-300);
 }
 
 /*! purgecss end ignore */

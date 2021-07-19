@@ -21,41 +21,41 @@ The following default shadow configurations are applied. To see a more visual re
   $config: (
     shadows: (
       2xs: (
-        0 1px 2px rgba(var(--gray-500), 0.1)
+        0 1px 2px rgba(134, 144, 162, 0.1)
       ),
       xs: (
-        0 2px 4px rgba(var(--gray-500), 0.15)
+        0 2px 4px rgba(134, 144, 162, 0.15)
       ),
       sm: (
-        0 3px 6px rgba(var(--gray-500), 0.2)
+        0 3px 6px rgba(134, 144, 162, 0.2)
       ),
       md: (
-        0 4px 8px rgba(var(--gray-500), 0.25)
+        0 4px 8px rgba(134, 144, 162, 0.25)
       ),
       lg: (
-        0 6px 12px rgba(var(--gray-500), 0.3)
+        0 6px 12px rgba(134, 144, 162, 0.3)
       ),
       xl: (
-        0 12px 24px rgba(var(--gray-500), 0.35)
+        0 12px 24px rgba(134, 144, 162, 0.35)
       ),
       2xl: (
-        0 24px 48px rgba(var(--gray-500), 0.4)
+        0 24px 48px rgba(134, 144, 162, 0.4)
       ),
 
       focus: (
-        0 0 0 4px rgba(var(--blue-500), 0.2)
+        0 0 0 4px rgba(0, 84, 203, 0.2)
       ),
       success: (
-        0 0 0 4px rgba(var(--green-500), 0.2)
+        0 0 0 4px rgba(18, 181, 57, 0.2)
       ),
       warning: (
-        0 0 0 4px rgba(var(--yellow-500), 0.2)
+        0 0 0 4px rgba(210, 127, 0, 0.2)
       ),
       danger: (
-        0 0 0 4px rgba(var(--red-500), 0.2)
+        0 0 0 4px rgba(203, 18, 0, 0.2)
       ),
       info: (
-        0 0 0 4px rgba(var(--teal-500), 0.2)
+        0 0 0 4px rgba(0, 200, 177, 0.2)
       )
     )
   )
